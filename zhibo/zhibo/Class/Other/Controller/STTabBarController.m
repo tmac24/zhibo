@@ -11,6 +11,7 @@
 #import "STMeController.h"
 #import "STShowController.h"
 #import "STTabBar.h"
+#import "STNaVigationController.h"
 
 @interface STTabBarController ()
 
@@ -44,7 +45,9 @@
     vc.tabBarItem.image = [UIImage imageNamed:image];
     vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
     
-    [self addChildViewController:vc];
+    // 包装一个导航控制器, 添加导航控制器为tabbarcontroller的子控制器
+    STNaVigationController *nav = [[STNaVigationController alloc] initWithRootViewController:vc];
+    [self addChildViewController:nav];
     
 }
 

@@ -15,6 +15,10 @@
 		317632451EAE220200E9D711 /* UIBarButtonItem+STExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 317632421EAE220200E9D711 /* UIBarButtonItem+STExtension.m */; };
 		317632461EAE220200E9D711 /* UIView+STExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 317632441EAE220200E9D711 /* UIView+STExtension.m */; };
 		3176325C1EAE236700E9D711 /* STShowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 317632591EAE236700E9D711 /* STShowController.m */; };
+		3176325F1EAE264900E9D711 /* STNaVigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3176325E1EAE264900E9D711 /* STNaVigationController.m */; };
+		317632621EAE2F0F00E9D711 /* STHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 317632611EAE2F0F00E9D711 /* STHotViewController.m */; };
+		317632651EAE2F8600E9D711 /* STNearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 317632641EAE2F8600E9D711 /* STNearViewController.m */; };
+		317632681EAE2FBF00E9D711 /* STFriendTrendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 317632671EAE2FBF00E9D711 /* STFriendTrendViewController.m */; };
 		31DE2AC61EAD929A009441F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE2AC51EAD929A009441F1 /* main.m */; };
 		31DE2ACF1EAD929A009441F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31DE2ACD1EAD929A009441F1 /* Main.storyboard */; };
 		31DE2AD11EAD929A009441F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31DE2AD01EAD929A009441F1 /* Assets.xcassets */; };
@@ -41,6 +45,14 @@
 		317632441EAE220200E9D711 /* UIView+STExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+STExtension.m"; sourceTree = "<group>"; };
 		317632581EAE236700E9D711 /* STShowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STShowController.h; sourceTree = "<group>"; };
 		317632591EAE236700E9D711 /* STShowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STShowController.m; sourceTree = "<group>"; };
+		3176325D1EAE264900E9D711 /* STNaVigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STNaVigationController.h; sourceTree = "<group>"; };
+		3176325E1EAE264900E9D711 /* STNaVigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STNaVigationController.m; sourceTree = "<group>"; };
+		317632601EAE2F0F00E9D711 /* STHotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STHotViewController.h; sourceTree = "<group>"; };
+		317632611EAE2F0F00E9D711 /* STHotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STHotViewController.m; sourceTree = "<group>"; };
+		317632631EAE2F8600E9D711 /* STNearViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STNearViewController.h; sourceTree = "<group>"; };
+		317632641EAE2F8600E9D711 /* STNearViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STNearViewController.m; sourceTree = "<group>"; };
+		317632661EAE2FBF00E9D711 /* STFriendTrendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STFriendTrendViewController.h; sourceTree = "<group>"; };
+		317632671EAE2FBF00E9D711 /* STFriendTrendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STFriendTrendViewController.m; sourceTree = "<group>"; };
 		31DE2AC11EAD929A009441F1 /* zhibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zhibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31DE2AC51EAD929A009441F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		31DE2ACE1EAD929A009441F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -66,12 +78,12 @@
 		316861441EADEE4100CCEC38 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				317632171EAE20C400E9D711 /* HomePage */,
 				317632531EAE233800E9D711 /* Hot */,
+				3176324A1EAE231200E9D711 /* Near */,
 				3176324E1EAE232400E9D711 /* FriendTrend */,
 				317632521EAE232400E9D711 /* Show */,
-				3176324A1EAE231200E9D711 /* Near */,
 				3176321E1EAE20E100E9D711 /* Me */,
-				317632171EAE20C400E9D711 /* HomePage */,
 				316861581EADF53400CCEC38 /* Other */,
 			);
 			path = Class;
@@ -169,6 +181,8 @@
 			children = (
 				317632261EAE211A00E9D711 /* STTabBarController.h */,
 				317632271EAE211A00E9D711 /* STTabBarController.m */,
+				3176325D1EAE264900E9D711 /* STNaVigationController.h */,
+				3176325E1EAE264900E9D711 /* STNaVigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -206,6 +220,8 @@
 		3176324B1EAE231200E9D711 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				317632631EAE2F8600E9D711 /* STNearViewController.h */,
+				317632641EAE2F8600E9D711 /* STNearViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -237,6 +253,8 @@
 		3176324F1EAE232400E9D711 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				317632661EAE2FBF00E9D711 /* STFriendTrendViewController.h */,
+				317632671EAE2FBF00E9D711 /* STFriendTrendViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -278,6 +296,8 @@
 		317632541EAE233800E9D711 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				317632601EAE2F0F00E9D711 /* STHotViewController.h */,
+				317632611EAE2F0F00E9D711 /* STHotViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -396,6 +416,7 @@
 		31DE2AB91EAD929A009441F1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ST;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "孙涛";
 				TargetAttributes = {
@@ -495,9 +516,13 @@
 				3176322C1EAE211A00E9D711 /* STTabBarController.m in Sources */,
 				316861621EADF53400CCEC38 /* AppDelegate.m in Sources */,
 				3176325C1EAE236700E9D711 /* STShowController.m in Sources */,
+				317632651EAE2F8600E9D711 /* STNearViewController.m in Sources */,
 				3176321D1EAE20C400E9D711 /* STHomePageController.m in Sources */,
 				317632451EAE220200E9D711 /* UIBarButtonItem+STExtension.m in Sources */,
 				31DE2AC61EAD929A009441F1 /* main.m in Sources */,
+				3176325F1EAE264900E9D711 /* STNaVigationController.m in Sources */,
+				317632621EAE2F0F00E9D711 /* STHotViewController.m in Sources */,
+				317632681EAE2FBF00E9D711 /* STFriendTrendViewController.m in Sources */,
 				3176322D1EAE211A00E9D711 /* STTabBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

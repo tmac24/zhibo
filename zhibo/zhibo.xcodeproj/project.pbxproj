@@ -7,25 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		316861491EADEE4100CCEC38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 316861461EADEE4100CCEC38 /* AppDelegate.m */; };
-		3168614A1EADEE4100CCEC38 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 316861481EADEE4100CCEC38 /* ViewController.m */; };
+		316861621EADF53400CCEC38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3168615A1EADF53400CCEC38 /* AppDelegate.m */; };
+		316861631EADF53400CCEC38 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3168615D1EADF53400CCEC38 /* ViewController.m */; };
 		31DE2AC61EAD929A009441F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE2AC51EAD929A009441F1 /* main.m */; };
 		31DE2ACF1EAD929A009441F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31DE2ACD1EAD929A009441F1 /* Main.storyboard */; };
 		31DE2AD11EAD929A009441F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31DE2AD01EAD929A009441F1 /* Assets.xcassets */; };
 		31DE2AD41EAD929A009441F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31DE2AD21EAD929A009441F1 /* LaunchScreen.storyboard */; };
+		61B32C3A653E8A06EBCB0C1C /* libPods-zhibo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D143A2E3CE0D77D58CCE0BB /* libPods-zhibo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		316861451EADEE4100CCEC38 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		316861461EADEE4100CCEC38 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		316861471EADEE4100CCEC38 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		316861481EADEE4100CCEC38 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		08D6D9BC4EB5E5002B785B3A /* Pods-zhibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zhibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-zhibo/Pods-zhibo.release.xcconfig"; sourceTree = "<group>"; };
+		316861591EADF53400CCEC38 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3168615A1EADF53400CCEC38 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3168615C1EADF53400CCEC38 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3168615D1EADF53400CCEC38 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		31DE2AC11EAD929A009441F1 /* zhibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zhibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31DE2AC51EAD929A009441F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		31DE2ACE1EAD929A009441F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		31DE2AD01EAD929A009441F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31DE2AD31EAD929A009441F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31DE2AD51EAD929A009441F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D143A2E3CE0D77D58CCE0BB /* libPods-zhibo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-zhibo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C488E40E1ACCB11C06B36509 /* Pods-zhibo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zhibo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-zhibo/Pods-zhibo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61B32C3A653E8A06EBCB0C1C /* libPods-zhibo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,12 +47,172 @@
 		316861441EADEE4100CCEC38 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				316861451EADEE4100CCEC38 /* AppDelegate.h */,
-				316861461EADEE4100CCEC38 /* AppDelegate.m */,
-				316861471EADEE4100CCEC38 /* ViewController.h */,
-				316861481EADEE4100CCEC38 /* ViewController.m */,
+				3168614B1EADF53400CCEC38 /* Base */,
+				316861501EADF53400CCEC38 /* Hot */,
+				316861541EADF53400CCEC38 /* Near */,
+				3168614C1EADF53400CCEC38 /* FriendTrend */,
+				3168615E1EADF53400CCEC38 /* Show */,
+				316861581EADF53400CCEC38 /* Other */,
 			);
 			path = Class;
+			sourceTree = "<group>";
+		};
+		3168614B1EADF53400CCEC38 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		3168614C1EADF53400CCEC38 /* FriendTrend */ = {
+			isa = PBXGroup;
+			children = (
+				3168614D1EADF53400CCEC38 /* Controller */,
+				3168614E1EADF53400CCEC38 /* Model */,
+				3168614F1EADF53400CCEC38 /* View */,
+			);
+			path = FriendTrend;
+			sourceTree = "<group>";
+		};
+		3168614D1EADF53400CCEC38 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3168614E1EADF53400CCEC38 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3168614F1EADF53400CCEC38 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		316861501EADF53400CCEC38 /* Hot */ = {
+			isa = PBXGroup;
+			children = (
+				316861511EADF53400CCEC38 /* Controller */,
+				316861521EADF53400CCEC38 /* Model */,
+				316861531EADF53400CCEC38 /* View */,
+			);
+			path = Hot;
+			sourceTree = "<group>";
+		};
+		316861511EADF53400CCEC38 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		316861521EADF53400CCEC38 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		316861531EADF53400CCEC38 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		316861541EADF53400CCEC38 /* Near */ = {
+			isa = PBXGroup;
+			children = (
+				316861551EADF53400CCEC38 /* Controller */,
+				316861561EADF53400CCEC38 /* Model */,
+				316861571EADF53400CCEC38 /* View */,
+			);
+			path = Near;
+			sourceTree = "<group>";
+		};
+		316861551EADF53400CCEC38 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		316861561EADF53400CCEC38 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		316861571EADF53400CCEC38 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		316861581EADF53400CCEC38 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				3168615B1EADF53400CCEC38 /* Category */,
+				316861591EADF53400CCEC38 /* AppDelegate.h */,
+				3168615A1EADF53400CCEC38 /* AppDelegate.m */,
+				3168615C1EADF53400CCEC38 /* ViewController.h */,
+				3168615D1EADF53400CCEC38 /* ViewController.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		3168615B1EADF53400CCEC38 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		3168615E1EADF53400CCEC38 /* Show */ = {
+			isa = PBXGroup;
+			children = (
+				3168615F1EADF53400CCEC38 /* Controller */,
+				316861601EADF53400CCEC38 /* Model */,
+				316861611EADF53400CCEC38 /* View */,
+			);
+			path = Show;
+			sourceTree = "<group>";
+		};
+		3168615F1EADF53400CCEC38 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		316861601EADF53400CCEC38 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		316861611EADF53400CCEC38 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		316D44F199FF32E7B5FDA8DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D143A2E3CE0D77D58CCE0BB /* libPods-zhibo.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		31DE2AB81EAD929A009441F1 = {
@@ -55,6 +220,8 @@
 			children = (
 				31DE2AC31EAD929A009441F1 /* zhibo */,
 				31DE2AC21EAD929A009441F1 /* Products */,
+				6B41DAB7AD46C23D9F8CE753 /* Pods */,
+				316D44F199FF32E7B5FDA8DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +254,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6B41DAB7AD46C23D9F8CE753 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C488E40E1ACCB11C06B36509 /* Pods-zhibo.debug.xcconfig */,
+				08D6D9BC4EB5E5002B785B3A /* Pods-zhibo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -94,9 +270,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 31DE2AD81EAD929A009441F1 /* Build configuration list for PBXNativeTarget "zhibo" */;
 			buildPhases = (
+				83DAE8469C87539065D4FCD8 /* [CP] Check Pods Manifest.lock */,
 				31DE2ABD1EAD929A009441F1 /* Sources */,
 				31DE2ABE1EAD929A009441F1 /* Frameworks */,
 				31DE2ABF1EAD929A009441F1 /* Resources */,
+				5A38CCA54A148A106B252824 /* [CP] Embed Pods Frameworks */,
+				2503EFA215B7471EAD767B38 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -154,13 +333,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2503EFA215B7471EAD767B38 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-zhibo/Pods-zhibo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A38CCA54A148A106B252824 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-zhibo/Pods-zhibo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83DAE8469C87539065D4FCD8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		31DE2ABD1EAD929A009441F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3168614A1EADEE4100CCEC38 /* ViewController.m in Sources */,
-				316861491EADEE4100CCEC38 /* AppDelegate.m in Sources */,
+				316861631EADF53400CCEC38 /* ViewController.m in Sources */,
+				316861621EADF53400CCEC38 /* AppDelegate.m in Sources */,
 				31DE2AC61EAD929A009441F1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,10 +506,12 @@
 		};
 		31DE2AD91EAD929A009441F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C488E40E1ACCB11C06B36509 /* Pods-zhibo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3V39Q7F96X;
 				INFOPLIST_FILE = zhibo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "--.zhibo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -291,10 +520,12 @@
 		};
 		31DE2ADA1EAD929A009441F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08D6D9BC4EB5E5002B785B3A /* Pods-zhibo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3V39Q7F96X;
 				INFOPLIST_FILE = zhibo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "--.zhibo";
 				PRODUCT_NAME = "$(TARGET_NAME)";

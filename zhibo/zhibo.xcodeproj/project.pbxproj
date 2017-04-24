@@ -19,6 +19,8 @@
 		317632621EAE2F0F00E9D711 /* STHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 317632611EAE2F0F00E9D711 /* STHotViewController.m */; };
 		317632651EAE2F8600E9D711 /* STNearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 317632641EAE2F8600E9D711 /* STNearViewController.m */; };
 		317632681EAE2FBF00E9D711 /* STFriendTrendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 317632671EAE2FBF00E9D711 /* STFriendTrendViewController.m */; };
+		3176326F1EAE407D00E9D711 /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3176326C1EAE407D00E9D711 /* HttpTool.m */; };
+		317632701EAE407D00E9D711 /* UIImageView+SDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3176326E1EAE407D00E9D711 /* UIImageView+SDWebImage.m */; };
 		31DE2AC61EAD929A009441F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE2AC51EAD929A009441F1 /* main.m */; };
 		31DE2ACF1EAD929A009441F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31DE2ACD1EAD929A009441F1 /* Main.storyboard */; };
 		31DE2AD11EAD929A009441F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31DE2AD01EAD929A009441F1 /* Assets.xcassets */; };
@@ -53,6 +55,11 @@
 		317632641EAE2F8600E9D711 /* STNearViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STNearViewController.m; sourceTree = "<group>"; };
 		317632661EAE2FBF00E9D711 /* STFriendTrendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STFriendTrendViewController.h; sourceTree = "<group>"; };
 		317632671EAE2FBF00E9D711 /* STFriendTrendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STFriendTrendViewController.m; sourceTree = "<group>"; };
+		3176326A1EAE407D00E9D711 /* APIConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIConfig.h; sourceTree = "<group>"; };
+		3176326B1EAE407D00E9D711 /* HttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpTool.h; sourceTree = "<group>"; };
+		3176326C1EAE407D00E9D711 /* HttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpTool.m; sourceTree = "<group>"; };
+		3176326D1EAE407D00E9D711 /* UIImageView+SDWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SDWebImage.h"; sourceTree = "<group>"; };
+		3176326E1EAE407D00E9D711 /* UIImageView+SDWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SDWebImage.m"; sourceTree = "<group>"; };
 		31DE2AC11EAD929A009441F1 /* zhibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zhibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31DE2AC51EAD929A009441F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		31DE2ACE1EAD929A009441F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -84,6 +91,7 @@
 				3176324E1EAE232400E9D711 /* FriendTrend */,
 				317632521EAE232400E9D711 /* Show */,
 				3176321E1EAE20E100E9D711 /* Me */,
+				317632691EAE407D00E9D711 /* NetWork */,
 				316861581EADF53400CCEC38 /* Other */,
 			);
 			path = Class;
@@ -339,6 +347,18 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		317632691EAE407D00E9D711 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				3176326A1EAE407D00E9D711 /* APIConfig.h */,
+				3176326B1EAE407D00E9D711 /* HttpTool.h */,
+				3176326C1EAE407D00E9D711 /* HttpTool.m */,
+				3176326D1EAE407D00E9D711 /* UIImageView+SDWebImage.h */,
+				3176326E1EAE407D00E9D711 /* UIImageView+SDWebImage.m */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
 		31DE2AB81EAD929A009441F1 = {
 			isa = PBXGroup;
 			children = (
@@ -516,6 +536,7 @@
 				3176322C1EAE211A00E9D711 /* STTabBarController.m in Sources */,
 				316861621EADF53400CCEC38 /* AppDelegate.m in Sources */,
 				3176325C1EAE236700E9D711 /* STShowController.m in Sources */,
+				317632701EAE407D00E9D711 /* UIImageView+SDWebImage.m in Sources */,
 				317632651EAE2F8600E9D711 /* STNearViewController.m in Sources */,
 				3176321D1EAE20C400E9D711 /* STHomePageController.m in Sources */,
 				317632451EAE220200E9D711 /* UIBarButtonItem+STExtension.m in Sources */,
@@ -524,6 +545,7 @@
 				317632621EAE2F0F00E9D711 /* STHotViewController.m in Sources */,
 				317632681EAE2FBF00E9D711 /* STFriendTrendViewController.m in Sources */,
 				3176322D1EAE211A00E9D711 /* STTabBar.m in Sources */,
+				3176326F1EAE407D00E9D711 /* HttpTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

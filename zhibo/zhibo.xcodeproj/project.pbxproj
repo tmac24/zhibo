@@ -8,7 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		316861621EADF53400CCEC38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3168615A1EADF53400CCEC38 /* AppDelegate.m */; };
-		316861631EADF53400CCEC38 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3168615D1EADF53400CCEC38 /* ViewController.m */; };
+		3176321D1EAE20C400E9D711 /* STHomePageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3176321A1EAE20C400E9D711 /* STHomePageController.m */; };
+		317632241EAE20E100E9D711 /* STMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 317632211EAE20E100E9D711 /* STMeController.m */; };
+		3176322C1EAE211A00E9D711 /* STTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 317632271EAE211A00E9D711 /* STTabBarController.m */; };
+		3176322D1EAE211A00E9D711 /* STTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3176322B1EAE211A00E9D711 /* STTabBar.m */; };
+		317632451EAE220200E9D711 /* UIBarButtonItem+STExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 317632421EAE220200E9D711 /* UIBarButtonItem+STExtension.m */; };
+		317632461EAE220200E9D711 /* UIView+STExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 317632441EAE220200E9D711 /* UIView+STExtension.m */; };
+		3176325C1EAE236700E9D711 /* STShowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 317632591EAE236700E9D711 /* STShowController.m */; };
 		31DE2AC61EAD929A009441F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE2AC51EAD929A009441F1 /* main.m */; };
 		31DE2ACF1EAD929A009441F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31DE2ACD1EAD929A009441F1 /* Main.storyboard */; };
 		31DE2AD11EAD929A009441F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31DE2AD01EAD929A009441F1 /* Assets.xcassets */; };
@@ -20,8 +26,21 @@
 		08D6D9BC4EB5E5002B785B3A /* Pods-zhibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zhibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-zhibo/Pods-zhibo.release.xcconfig"; sourceTree = "<group>"; };
 		316861591EADF53400CCEC38 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3168615A1EADF53400CCEC38 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3168615C1EADF53400CCEC38 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3168615D1EADF53400CCEC38 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		317632191EAE20C400E9D711 /* STHomePageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STHomePageController.h; sourceTree = "<group>"; };
+		3176321A1EAE20C400E9D711 /* STHomePageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STHomePageController.m; sourceTree = "<group>"; };
+		317632201EAE20E100E9D711 /* STMeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMeController.h; sourceTree = "<group>"; };
+		317632211EAE20E100E9D711 /* STMeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMeController.m; sourceTree = "<group>"; };
+		317632261EAE211A00E9D711 /* STTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTabBarController.h; sourceTree = "<group>"; };
+		317632271EAE211A00E9D711 /* STTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STTabBarController.m; sourceTree = "<group>"; };
+		317632281EAE211A00E9D711 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		3176322A1EAE211A00E9D711 /* STTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTabBar.h; sourceTree = "<group>"; };
+		3176322B1EAE211A00E9D711 /* STTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STTabBar.m; sourceTree = "<group>"; };
+		317632411EAE220200E9D711 /* UIBarButtonItem+STExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+STExtension.h"; sourceTree = "<group>"; };
+		317632421EAE220200E9D711 /* UIBarButtonItem+STExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+STExtension.m"; sourceTree = "<group>"; };
+		317632431EAE220200E9D711 /* UIView+STExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+STExtension.h"; sourceTree = "<group>"; };
+		317632441EAE220200E9D711 /* UIView+STExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+STExtension.m"; sourceTree = "<group>"; };
+		317632581EAE236700E9D711 /* STShowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STShowController.h; sourceTree = "<group>"; };
+		317632591EAE236700E9D711 /* STShowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STShowController.m; sourceTree = "<group>"; };
 		31DE2AC11EAD929A009441F1 /* zhibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zhibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31DE2AC51EAD929A009441F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		31DE2ACE1EAD929A009441F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -47,164 +66,28 @@
 		316861441EADEE4100CCEC38 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				3168614B1EADF53400CCEC38 /* Base */,
-				316861501EADF53400CCEC38 /* Hot */,
-				316861541EADF53400CCEC38 /* Near */,
-				3168614C1EADF53400CCEC38 /* FriendTrend */,
-				3168615E1EADF53400CCEC38 /* Show */,
+				317632531EAE233800E9D711 /* Hot */,
+				3176324E1EAE232400E9D711 /* FriendTrend */,
+				317632521EAE232400E9D711 /* Show */,
+				3176324A1EAE231200E9D711 /* Near */,
+				3176321E1EAE20E100E9D711 /* Me */,
+				317632171EAE20C400E9D711 /* HomePage */,
 				316861581EADF53400CCEC38 /* Other */,
 			);
 			path = Class;
 			sourceTree = "<group>";
 		};
-		3168614B1EADF53400CCEC38 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		3168614C1EADF53400CCEC38 /* FriendTrend */ = {
-			isa = PBXGroup;
-			children = (
-				3168614D1EADF53400CCEC38 /* Controller */,
-				3168614E1EADF53400CCEC38 /* Model */,
-				3168614F1EADF53400CCEC38 /* View */,
-			);
-			path = FriendTrend;
-			sourceTree = "<group>";
-		};
-		3168614D1EADF53400CCEC38 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		3168614E1EADF53400CCEC38 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		3168614F1EADF53400CCEC38 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		316861501EADF53400CCEC38 /* Hot */ = {
-			isa = PBXGroup;
-			children = (
-				316861511EADF53400CCEC38 /* Controller */,
-				316861521EADF53400CCEC38 /* Model */,
-				316861531EADF53400CCEC38 /* View */,
-			);
-			path = Hot;
-			sourceTree = "<group>";
-		};
-		316861511EADF53400CCEC38 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		316861521EADF53400CCEC38 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		316861531EADF53400CCEC38 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		316861541EADF53400CCEC38 /* Near */ = {
-			isa = PBXGroup;
-			children = (
-				316861551EADF53400CCEC38 /* Controller */,
-				316861561EADF53400CCEC38 /* Model */,
-				316861571EADF53400CCEC38 /* View */,
-			);
-			path = Near;
-			sourceTree = "<group>";
-		};
-		316861551EADF53400CCEC38 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		316861561EADF53400CCEC38 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		316861571EADF53400CCEC38 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		316861581EADF53400CCEC38 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				3168615B1EADF53400CCEC38 /* Category */,
+				317632401EAE220200E9D711 /* Category */,
+				317632251EAE211A00E9D711 /* Controller */,
+				317632291EAE211A00E9D711 /* View */,
 				316861591EADF53400CCEC38 /* AppDelegate.h */,
 				3168615A1EADF53400CCEC38 /* AppDelegate.m */,
-				3168615C1EADF53400CCEC38 /* ViewController.h */,
-				3168615D1EADF53400CCEC38 /* ViewController.m */,
+				317632281EAE211A00E9D711 /* PrefixHeader.pch */,
 			);
 			path = Other;
-			sourceTree = "<group>";
-		};
-		3168615B1EADF53400CCEC38 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Category;
-			sourceTree = "<group>";
-		};
-		3168615E1EADF53400CCEC38 /* Show */ = {
-			isa = PBXGroup;
-			children = (
-				3168615F1EADF53400CCEC38 /* Controller */,
-				316861601EADF53400CCEC38 /* Model */,
-				316861611EADF53400CCEC38 /* View */,
-			);
-			path = Show;
-			sourceTree = "<group>";
-		};
-		3168615F1EADF53400CCEC38 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		316861601EADF53400CCEC38 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		316861611EADF53400CCEC38 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		316D44F199FF32E7B5FDA8DC /* Frameworks */ = {
@@ -213,6 +96,227 @@
 				5D143A2E3CE0D77D58CCE0BB /* libPods-zhibo.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		317632171EAE20C400E9D711 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				317632181EAE20C400E9D711 /* Controller */,
+				3176321B1EAE20C400E9D711 /* Model */,
+				3176321C1EAE20C400E9D711 /* View */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		317632181EAE20C400E9D711 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				317632191EAE20C400E9D711 /* STHomePageController.h */,
+				3176321A1EAE20C400E9D711 /* STHomePageController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3176321B1EAE20C400E9D711 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3176321C1EAE20C400E9D711 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3176321E1EAE20E100E9D711 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				3176321F1EAE20E100E9D711 /* Controller */,
+				317632221EAE20E100E9D711 /* Model */,
+				317632231EAE20E100E9D711 /* View */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		3176321F1EAE20E100E9D711 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				317632201EAE20E100E9D711 /* STMeController.h */,
+				317632211EAE20E100E9D711 /* STMeController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		317632221EAE20E100E9D711 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		317632231EAE20E100E9D711 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		317632251EAE211A00E9D711 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				317632261EAE211A00E9D711 /* STTabBarController.h */,
+				317632271EAE211A00E9D711 /* STTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		317632291EAE211A00E9D711 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3176322A1EAE211A00E9D711 /* STTabBar.h */,
+				3176322B1EAE211A00E9D711 /* STTabBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		317632401EAE220200E9D711 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				317632411EAE220200E9D711 /* UIBarButtonItem+STExtension.h */,
+				317632421EAE220200E9D711 /* UIBarButtonItem+STExtension.m */,
+				317632431EAE220200E9D711 /* UIView+STExtension.h */,
+				317632441EAE220200E9D711 /* UIView+STExtension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		3176324A1EAE231200E9D711 /* Near */ = {
+			isa = PBXGroup;
+			children = (
+				3176324B1EAE231200E9D711 /* Controller */,
+				3176324C1EAE231200E9D711 /* Model */,
+				3176324D1EAE231200E9D711 /* View */,
+			);
+			path = Near;
+			sourceTree = "<group>";
+		};
+		3176324B1EAE231200E9D711 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3176324C1EAE231200E9D711 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3176324D1EAE231200E9D711 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3176324E1EAE232400E9D711 /* FriendTrend */ = {
+			isa = PBXGroup;
+			children = (
+				3176324F1EAE232400E9D711 /* Controller */,
+				317632501EAE232400E9D711 /* Model */,
+				317632511EAE232400E9D711 /* View */,
+			);
+			path = FriendTrend;
+			sourceTree = "<group>";
+		};
+		3176324F1EAE232400E9D711 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		317632501EAE232400E9D711 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		317632511EAE232400E9D711 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		317632521EAE232400E9D711 /* Show */ = {
+			isa = PBXGroup;
+			children = (
+				317632571EAE236700E9D711 /* Controller */,
+				3176325A1EAE236700E9D711 /* Model */,
+				3176325B1EAE236700E9D711 /* View */,
+			);
+			path = Show;
+			sourceTree = "<group>";
+		};
+		317632531EAE233800E9D711 /* Hot */ = {
+			isa = PBXGroup;
+			children = (
+				317632541EAE233800E9D711 /* Controller */,
+				317632551EAE233800E9D711 /* Model */,
+				317632561EAE233800E9D711 /* View */,
+			);
+			path = Hot;
+			sourceTree = "<group>";
+		};
+		317632541EAE233800E9D711 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		317632551EAE233800E9D711 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		317632561EAE233800E9D711 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		317632571EAE236700E9D711 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				317632581EAE236700E9D711 /* STShowController.h */,
+				317632591EAE236700E9D711 /* STShowController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3176325A1EAE236700E9D711 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3176325B1EAE236700E9D711 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		31DE2AB81EAD929A009441F1 = {
@@ -386,9 +490,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				316861631EADF53400CCEC38 /* ViewController.m in Sources */,
+				317632461EAE220200E9D711 /* UIView+STExtension.m in Sources */,
+				317632241EAE20E100E9D711 /* STMeController.m in Sources */,
+				3176322C1EAE211A00E9D711 /* STTabBarController.m in Sources */,
 				316861621EADF53400CCEC38 /* AppDelegate.m in Sources */,
+				3176325C1EAE236700E9D711 /* STShowController.m in Sources */,
+				3176321D1EAE20C400E9D711 /* STHomePageController.m in Sources */,
+				317632451EAE220200E9D711 /* UIBarButtonItem+STExtension.m in Sources */,
 				31DE2AC61EAD929A009441F1 /* main.m in Sources */,
+				3176322D1EAE211A00E9D711 /* STTabBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +621,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 3V39Q7F96X;
+				GCC_PREFIX_HEADER = zhibo/Class/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = zhibo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -526,6 +637,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 3V39Q7F96X;
+				GCC_PREFIX_HEADER = zhibo/Class/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = zhibo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

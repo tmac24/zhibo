@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  STMeController.h
 //  zhibo
 //
 //  Created by 孙涛 on 2017/4/24.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface STMeController : UIViewController
 
 @end
-

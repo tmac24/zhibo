@@ -21,6 +21,11 @@
 		317632681EAE2FBF00E9D711 /* STFriendTrendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 317632671EAE2FBF00E9D711 /* STFriendTrendViewController.m */; };
 		3176326F1EAE407D00E9D711 /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3176326C1EAE407D00E9D711 /* HttpTool.m */; };
 		317632701EAE407D00E9D711 /* UIImageView+SDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3176326E1EAE407D00E9D711 /* UIImageView+SDWebImage.m */; };
+		318D15221EAF0A1900E2E4F2 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 318D15211EAF0A1900E2E4F2 /* Foundation+Log.m */; };
+		318D15251EAF0B8C00E2E4F2 /* STHot.m in Sources */ = {isa = PBXBuildFile; fileRef = 318D15241EAF0B8C00E2E4F2 /* STHot.m */; };
+		318D15291EAF0E8B00E2E4F2 /* STHotCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 318D15271EAF0E8B00E2E4F2 /* STHotCell.m */; };
+		318D152A1EAF0E8B00E2E4F2 /* STHotCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 318D15281EAF0E8B00E2E4F2 /* STHotCell.xib */; };
+		318D152D1EAF123400E2E4F2 /* STGreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 318D152C1EAF123400E2E4F2 /* STGreator.m */; };
 		31DE2AC61EAD929A009441F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE2AC51EAD929A009441F1 /* main.m */; };
 		31DE2ACF1EAD929A009441F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31DE2ACD1EAD929A009441F1 /* Main.storyboard */; };
 		31DE2AD11EAD929A009441F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31DE2AD01EAD929A009441F1 /* Assets.xcassets */; };
@@ -60,6 +65,14 @@
 		3176326C1EAE407D00E9D711 /* HttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpTool.m; sourceTree = "<group>"; };
 		3176326D1EAE407D00E9D711 /* UIImageView+SDWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SDWebImage.h"; sourceTree = "<group>"; };
 		3176326E1EAE407D00E9D711 /* UIImageView+SDWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SDWebImage.m"; sourceTree = "<group>"; };
+		318D15211EAF0A1900E2E4F2 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		318D15231EAF0B8C00E2E4F2 /* STHot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STHot.h; sourceTree = "<group>"; };
+		318D15241EAF0B8C00E2E4F2 /* STHot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STHot.m; sourceTree = "<group>"; };
+		318D15261EAF0E8B00E2E4F2 /* STHotCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STHotCell.h; sourceTree = "<group>"; };
+		318D15271EAF0E8B00E2E4F2 /* STHotCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STHotCell.m; sourceTree = "<group>"; };
+		318D15281EAF0E8B00E2E4F2 /* STHotCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STHotCell.xib; sourceTree = "<group>"; };
+		318D152B1EAF123400E2E4F2 /* STGreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STGreator.h; sourceTree = "<group>"; };
+		318D152C1EAF123400E2E4F2 /* STGreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STGreator.m; sourceTree = "<group>"; };
 		31DE2AC11EAD929A009441F1 /* zhibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zhibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31DE2AC51EAD929A009441F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		31DE2ACE1EAD929A009441F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -105,6 +118,7 @@
 				317632291EAE211A00E9D711 /* View */,
 				316861591EADF53400CCEC38 /* AppDelegate.h */,
 				3168615A1EADF53400CCEC38 /* AppDelegate.m */,
+				318D15211EAF0A1900E2E4F2 /* Foundation+Log.m */,
 				317632281EAE211A00E9D711 /* PrefixHeader.pch */,
 			);
 			path = Other;
@@ -313,6 +327,10 @@
 		317632551EAE233800E9D711 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				318D15231EAF0B8C00E2E4F2 /* STHot.h */,
+				318D15241EAF0B8C00E2E4F2 /* STHot.m */,
+				318D152B1EAF123400E2E4F2 /* STGreator.h */,
+				318D152C1EAF123400E2E4F2 /* STGreator.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -320,6 +338,9 @@
 		317632561EAE233800E9D711 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				318D15261EAF0E8B00E2E4F2 /* STHotCell.h */,
+				318D15271EAF0E8B00E2E4F2 /* STHotCell.m */,
+				318D15281EAF0E8B00E2E4F2 /* STHotCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -470,6 +491,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				318D152A1EAF0E8B00E2E4F2 /* STHotCell.xib in Resources */,
 				31DE2AD41EAD929A009441F1 /* LaunchScreen.storyboard in Resources */,
 				31DE2AD11EAD929A009441F1 /* Assets.xcassets in Resources */,
 				31DE2ACF1EAD929A009441F1 /* Main.storyboard in Resources */,
@@ -533,7 +555,9 @@
 			files = (
 				317632461EAE220200E9D711 /* UIView+STExtension.m in Sources */,
 				317632241EAE20E100E9D711 /* STMeController.m in Sources */,
+				318D152D1EAF123400E2E4F2 /* STGreator.m in Sources */,
 				3176322C1EAE211A00E9D711 /* STTabBarController.m in Sources */,
+				318D15251EAF0B8C00E2E4F2 /* STHot.m in Sources */,
 				316861621EADF53400CCEC38 /* AppDelegate.m in Sources */,
 				3176325C1EAE236700E9D711 /* STShowController.m in Sources */,
 				317632701EAE407D00E9D711 /* UIImageView+SDWebImage.m in Sources */,
@@ -544,8 +568,10 @@
 				3176325F1EAE264900E9D711 /* STNaVigationController.m in Sources */,
 				317632621EAE2F0F00E9D711 /* STHotViewController.m in Sources */,
 				317632681EAE2FBF00E9D711 /* STFriendTrendViewController.m in Sources */,
+				318D15291EAF0E8B00E2E4F2 /* STHotCell.m in Sources */,
 				3176322D1EAE211A00E9D711 /* STTabBar.m in Sources */,
 				3176326F1EAE407D00E9D711 /* HttpTool.m in Sources */,
+				318D15221EAF0A1900E2E4F2 /* Foundation+Log.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

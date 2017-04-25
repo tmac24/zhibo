@@ -55,7 +55,7 @@
         self.indicatorView.width = button.titleLabel.width;
         self.indicatorView.centerX = button.centerX;
     }];
-    
+
     // 滚动
     CGPoint offset = self.contentView.contentOffset;
     offset.x = button.tag * self.contentView.width;
@@ -92,7 +92,7 @@
 - (void)setupTitleView {
     // 标签栏整体
     UIView *titlesView = [[UIView alloc] init];
-    titlesView.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.7];
+    titlesView.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:1];
     titlesView.width = self.view.width;
     titlesView.height = 35;
     titlesView.y = 0;
@@ -193,7 +193,7 @@
     // 取出子控制器
     UIViewController *vc = self.childViewControllers[index];
     vc.view.x = scrollView.contentOffset.x;
-    vc.view.y = 0; // 设置控制器view的y值为0(默认是20)
+    vc.view.y = 25; // 设置控制器view的y值为0(默认是20)
     vc.view.height = scrollView.height; // 设置控制器view的height值为整个屏幕的高度(默认是比屏幕高度少个20)
     
     [scrollView addSubview:vc.view];

@@ -29,6 +29,8 @@
     //图片圆角
     //    self.view.layer.cornerRadius = 15;
     //    self.view.layer.masksToBounds = YES;
+    
+    
     self.nameLabel.text = hot.creator.nick;
     self.locationLabel.text = hot.city;
     self.onLineLabel.text = hot.online_users;

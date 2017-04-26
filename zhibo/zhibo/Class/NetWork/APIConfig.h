@@ -32,7 +32,7 @@
 
 
 
-
+//http://service.inke.com/api/live/simpleall?&gender=1&gps_info=200%2C200&loc_info=&is_new_user=0&lc=0000000000000053&cc=TG0001&cv=IK4.0.30_Iphone&proto=7&idfa=14390324-A1EC-4746-8743-A6BA53921C4D&idfv=012372C7-1877-464C-A971-7CA41554D5B3&devi=b139da85e05bf5c8957ea6eda7379afbd711d93c&osversion=ios_10.300000&ua=iPhone8_1&imei=&imsi=&uid=107020648&sid=20TLccV62mo9xVzv9XNvEpt7t1g50Ypm2Ed4TJ3hWAphpuJ1i0J&conn=wifi&mtid=66808e327dc79d135ba18e051673d906&mtxid=282cb2898be6&logid=186,166,205,208&s_sg=228f4f0ac793f1836050626b68bde6c9&s_sc=100&s_st=1493074961 HTTP/1.1"
 //热门滚动广告
 //http://img2.inke.cn/MTQ5MzAwMjQ4OTQ5MiMzNTgjanBn.jpg
 //附近的人图片服务器地址
@@ -45,6 +45,8 @@
 //http://service.inke.com/api/live/simpleall?&gender=1&gps_info=200%2C200&loc_info=&is_new_user=0&lc=0000000000000053&cc=TG0001&cv=IK4.0.30_Iphone&proto=7&idfa=14390324-A1EC-4746-8743-A6BA53921C4D&idfv=012372C7-1877-464C-A971-7CA41554D5B3&devi=b139da85e05bf5c8957ea6eda7379afbd711d93c&osversion=ios_10.300000&ua=iPhone8_1&imei=&imsi=&uid=107020648&sid=20TLccV62mo9xVzv9XNvEpt7t1g50Ypm2Ed4TJ3hWAphpuJ1i0J&conn=wifi&mtid=66808e327dc79d135ba18e051673d906&mtxid=282cb2898be6&logid=186,166,205,208&s_sg=228f4f0ac793f1836050626b68bde6c9&s_sc=100&s_st=1493074961 HTTP/1.1
 //http://218.11.0.112
 //http://218.60.113.17
+
+
 
 //热门直播
 //GET /api/live/simpleall?&gender=1&gps_info=200%2C200&loc_info=&is_new_user=0&lc=0000000000000053&cc=TG0001&cv=IK4.0.30_Iphone&proto=7&idfa=14390324-A1EC-4746-8743-A6BA53921C4D&idfv=012372C7-1877-464C-A971-7CA41554D5B3&devi=b139da85e05bf5c8957ea6eda7379afbd711d93c&osversion=ios_10.300000&ua=iPhone8_1&imei=&imsi=&uid=107020648&sid=20TLccV62mo9xVzv9XNvEpt7t1g50Ypm2Ed4TJ3hWAphpuJ1i0J&conn=wifi&mtid=66808e327dc79d135ba18e051673d906&mtxid=282cb2898be6&logid=186,166,205,208&s_sg=228f4f0ac793f1836050626b68bde6c9&s_sc=100&s_st=1493074961 HTTP/1.1

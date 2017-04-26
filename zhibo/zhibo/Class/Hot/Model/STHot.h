@@ -14,7 +14,8 @@
 @property (nonatomic, strong) STGreator * creator;
 /** 在线人数 */
 @property (nonatomic, strong) NSString *online_users;
-
+/** 直播地址 */
+@property (nonatomic, strong) NSString *stream_addr;
 
 
 //@property (nonatomic, strong) NSString * city;

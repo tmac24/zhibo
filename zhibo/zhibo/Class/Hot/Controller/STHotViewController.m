@@ -11,6 +11,7 @@
 #import "STHot.h"
 #import "STHotCell.h"
 #import <MJExtension.h>
+#import "STHotPlayController.h"
 
 //#import <AFNetworking.h>
 
@@ -50,9 +51,12 @@ static NSString * ID = @"hot";
         
 //        STLog(@"%@",json[@"lives"]);
         
-        //字典转模型
+        //字典数组转模型数组
         NSArray *newTopics = [STHot mj_objectArrayWithKeyValuesArray:json[@"lives"]];
+
+
         [self.hots addObjectsFromArray:newTopics];
+        
         
         // 刷新表格
         [self.tableView reloadData];
@@ -80,13 +84,35 @@ static NSString * ID = @"hot";
     
     cell.hot = self.hots[indexPath.row];
     
-    
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     return 100 + [UIScreen mainScreen].bounds.size.width;
+}
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    STHot *hot = self.hots[indexPath.row];
+    
+    STHotPlayController *playerVC = [[STHotPlayController alloc] init];
+    playerVC.hot = hot;
+    
+
+    
+    [self.navigationController pushViewController:playerVC animated:YES];
+    
+    
+    /*系统自带的播放器播放不了直播内容
+     
+     MPMoviePlayerViewController * movieVC = [[MPMoviePlayerViewController alloc] initWithContentURL:[NSURL URLWithString:live.streamAddr]];
+     
+     [self presentViewController:movieVC animated:YES completion:nil];
+     */
 }
 
 

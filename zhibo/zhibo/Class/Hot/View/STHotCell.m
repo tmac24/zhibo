@@ -25,6 +25,10 @@
 
     _hot = hot;
     
+//    STLog(@"%@",hot);
+//    NSLog(@"%@",hot.stream_Addr);
+//    NSLog(@"%@",hot.creator.portrait);
+    
     [self.headView sd_setImageWithURL:[NSURL URLWithString:hot.creator.portrait] placeholderImage:[UIImage imageNamed:@"default_room"]];
     //图片圆角
     //    self.view.layer.cornerRadius = 15;
@@ -36,7 +40,7 @@
     self.onLineLabel.text = hot.online_users;
 //    self.onLineLabel.text = [@(hot.online_users) stringValue];
 
-    
+
     [self.bigImageView sd_setImageWithURL:[NSURL URLWithString:hot.creator.portrait] placeholderImage:[UIImage imageNamed:@"default_room"]];
 
 

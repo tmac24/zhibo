@@ -9,132 +9,155 @@
 #import "STHotPlayController.h"
 #import <IJKMediaFramework/IJKMediaFramework.h>
 #import "UIImageView+SDWebImage.h"
+#import "STLiveChatViewController.h"
 
 @interface STHotPlayController ()
 @property(atomic, retain) id<IJKMediaPlayback> player;
-
+/** 毛玻璃图片 */
 @property (nonatomic, strong) UIImageView * blurImageView;
 
 @property (nonatomic, strong) UIButton * closeBtn;
 
-//@property (nonatomic, strong) SXTLiveChatViewController * liveChatVC;
+@property (nonatomic, strong) STLiveChatViewController * liveChatVC;
 @end
 
 @implementation STHotPlayController
-//- (SXTLiveChatViewController *)liveChatVC {
-//    
-//    if (!_liveChatVC) {
-//        _liveChatVC = [[SXTLiveChatViewController alloc] init];
-//    }
-//    return _liveChatVC;
-//}
 
-//- (UIButton *)closeBtn {
-//    
-//    if (!_closeBtn) {
-//        _closeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-//        [_closeBtn setImage:[UIImage imageNamed:@"mg_room_btn_guan_h"] forState:UIControlStateNormal];
-//        [_closeBtn sizeToFit];
-//        _closeBtn.frame = CGRectMake(SCREEN_WIDTH - _closeBtn.width - 10, SCREEN_HEIGHT - _closeBtn.height - 10, _closeBtn.width, _closeBtn.height);
-//        [_closeBtn addTarget:self action:@selector(closeAction:) forControlEvents:UIControlEventTouchUpInside];
-//    }
-//    return _closeBtn;
-//}
-//
-//- (void)closeAction:(UIButton *)button {
-//    
-//    [self.navigationController popViewControllerAnimated:YES];
-//}
+- (STLiveChatViewController *)liveChatVC {
+    
+    if (!_liveChatVC) {
+        _liveChatVC = [[STLiveChatViewController alloc] init];
+    }
+    return _liveChatVC;
+}
+
+/**
+ * 添加聊天控制器
+ */
+- (void)addChildVC {
+    
+    [self addChildViewController:self.liveChatVC];
+    self.liveChatVC.view.frame = self.view.bounds;
+    
+    [self.view addSubview:self.liveChatVC.view];
+    
+    if (self.hot) {
+        //热门
+        self.liveChatVC.hot = self.hot;
+    }else {
+        //附近的人
+        self.liveChatVC.near = self.near;
+    }
+}
+
+- (UIButton *)closeBtn {
+    
+    if (!_closeBtn) {
+        _closeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_closeBtn setImage:[UIImage imageNamed:@"mg_room_btn_guan_h"] forState:UIControlStateNormal];
+        //固定宽高
+        [_closeBtn sizeToFit];
+        _closeBtn.frame = CGRectMake(SCREEN_WIDTH - _closeBtn.width - 10, SCREEN_HEIGHT - _closeBtn.height - 10, _closeBtn.width, _closeBtn.height);
+        [_closeBtn addTarget:self action:@selector(closeAction:) forControlEvents:UIControlEventTouchUpInside];
+        
+    }
+    return _closeBtn;
+}
+
+/**
+ * pop到上一个界面
+ */
+- (void)closeAction:(UIButton *)button {
+    
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-//    self.navigationController.navigationBarHidden = YES;
-    
-    //注册直播需要用 的通知
+    self.navigationController.navigationBarHidden = YES;
+    //注册直播需要用的通知
     [self installMovieNotificationObservers];
     
     //准备播放
     [self.player prepareToPlay];
     
-//    UIWindow * w = [[UIApplication sharedApplication].delegate window];
-//    [w addSubview:self.closeBtn];
+    //获取当前window
+    UIWindow * window = [[UIApplication sharedApplication].delegate window];
+    [window addSubview:self.closeBtn];
     
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     
-//    self.navigationController.navigationBarHidden = NO;
+    self.navigationController.navigationBarHidden = NO;
     //关闭直播
     [self.player shutdown];
     [self removeMovieNotificationObservers];
     
-//    [self.closeBtn removeFromSuperview];
+    [self.closeBtn removeFromSuperview];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    
+    //播放视频
     [self initPlayer];
     
-//    [self initUI];
+    //加载毛玻璃图片
+    [self initUI];
     
-//    [self addChildVC];
+    //添加聊天控制器
+    [self addChildVC];
 }
 
-//- (void)initUI {
-//    
-//    self.view.backgroundColor = [UIColor blackColor];
-//    
-//    self.blurImageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
-//    self.blurImageView.userInteractionEnabled = YES;
-//    [self.blurImageView downloadImage:[NSString stringWithFormat:@"%@%@",IMAGE_HOST,self.hot.creator.portrait] placeholder:@"default_room"];
-//    [self.view addSubview:self.blurImageView];
-//    
-//    //创建毛玻璃效果
-//    UIBlurEffect * blur = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
-//    //创建毛玻璃视图
-//    UIVisualEffectView * ve = [[UIVisualEffectView alloc] initWithEffect:blur];
-//    ve.frame = self.blurImageView.bounds;
-//    //毛玻璃视图加入图片view上
-//    [self.blurImageView addSubview:ve];
-//    
-//    
-//}
+/**
+ * 加载毛玻璃图片
+ */
+- (void)initUI {
+    
+    self.view.backgroundColor = [UIColor blackColor];
+    
+    self.blurImageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+    self.blurImageView.userInteractionEnabled = YES;
+    [self.blurImageView downloadImage:self.hot.creator.portrait placeholder:@"default_room"];
+    [self.view addSubview:self.blurImageView];
+    
+    //创建毛玻璃效果
+    UIBlurEffect *blur = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
+    //创建毛玻璃视图
+    UIVisualEffectView *ve = [[UIVisualEffectView alloc] initWithEffect:blur];
+    ve.frame = self.blurImageView.bounds;
+    //毛玻璃视图加入图片view上
+    [self.blurImageView addSubview:ve];
+    
+    
+}
 
+/**
+ * 播放视频
+ */
 - (void)initPlayer {
     
     IJKFFOptions * options = [IJKFFOptions optionsByDefault];
+    if (self.hot) {//如果是热门直播
+            IJKFFMoviePlayerController * player = [[IJKFFMoviePlayerController alloc] initWithContentURLString:self.hot.stream_addr withOptions:options];
+        self.player = player;
+
+    } else { //附近的人直播
     
-    IJKFFMoviePlayerController * player = [[IJKFFMoviePlayerController alloc] initWithContentURLString:self.hot.stream_addr withOptions:options];
-//    IJKFFMoviePlayerController * player = [[IJKFFMoviePlayerController alloc] initWithContentURL:[NSURL URLWithString:self.hot.streamAddr] withOptions:options];
-    self.player = player;
+        IJKFFMoviePlayerController * player = [[IJKFFMoviePlayerController alloc] initWithContentURLString:self.near.info.stream_addr withOptions:options];
+        self.player = player;
+    };
+
+
     self.player.view.frame = self.view.bounds;
     self.player.shouldAutoplay = YES;
     [self.view addSubview:self.player.view];
     
 }
-
-//- (void)addChildVC {
-//    
-//    [self addChildViewController:self.liveChatVC];
-//    
-//    [self.view addSubview:self.liveChatVC.view];
-//    
-//    [self.liveChatVC.view mas_makeConstraints:^(MASConstraintMaker *make) {
-//        
-//        make.edges.equalTo(self.view);
-//        
-//    }];
-//    
-//    self.liveChatVC.live = self.live;
-//    
-//}
-
-
 
 - (void)loadStateDidChange:(NSNotification*)notification
 {

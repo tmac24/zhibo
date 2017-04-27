@@ -36,11 +36,7 @@ static NSString * ID = @"hot";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    self.view.backgroundColor = [UIColor redColor];
-
     [self.tableView registerNib:[UINib nibWithNibName:@"STHotCell" bundle:nil] forCellReuseIdentifier:ID];
-    
-//    self.tableView.rowHeight = 450;
     
     [self loadData];
 }
@@ -102,7 +98,8 @@ static NSString * ID = @"hot";
     STHotPlayController *playerVC = [[STHotPlayController alloc] init];
     playerVC.hot = hot;
     
-
+    //隐藏tabBar
+    playerVC.hidesBottomBarWhenPushed = YES;
     
     [self.navigationController pushViewController:playerVC animated:YES];
     

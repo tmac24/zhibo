@@ -16,4 +16,7 @@
 /** 等级 */
 @property (nonatomic, strong) NSString *level;
 
+/** ID */
+@property (nonatomic, strong) NSString *id;
+
 @end

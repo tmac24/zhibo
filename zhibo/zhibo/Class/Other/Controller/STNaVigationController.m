@@ -14,6 +14,14 @@
 
 @implementation STNaVigationController
 
+/**
+ * 当push一个控制器时调用（push直播页面）
+ */
+//- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
+//    
+//    [self setHidesBottomBarWhenPushed:YES];
+//}
+
 + (void)initialize {
 
     UINavigationBar *bar = [UINavigationBar appearance];

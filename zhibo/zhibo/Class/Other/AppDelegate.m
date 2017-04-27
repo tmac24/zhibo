@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "STTabBarController.h"
+#import "STLocationManager.h"
 
 @interface AppDelegate ()
 
@@ -25,6 +26,12 @@
     
     //设置窗口的根控制器
     self.window.rootViewController = [[STTabBarController alloc] init];
+    
+    //开启定位功能
+    [[STLocationManager sharedManager] getGps:^(NSString *lat, NSString *lon) {
+        STLog(@"%@",lat);
+        STLog(@"%@",lon);
+    }];
     
     //显示窗口
     [self.window makeKeyAndVisible];

@@ -40,7 +40,7 @@
     CGFloat height = self.height;
     
     //设置直播的按钮frame
-    self.showButton.center = CGPointMake(width * 0.5, height - 50);
+    self.showButton.center = CGPointMake(width * 0.5, height - 40);
     
     //设置其他tabBarButton的frame
     CGFloat buttonY = 0;

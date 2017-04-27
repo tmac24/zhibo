@@ -22,9 +22,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    [UINavigationBar appearance];
+//    self.view.backgroundColor = STRGBColor(107, 231, 214);
     
-    self.view.backgroundColor = [UIColor redColor];
+    [UINavigationBar appearance];
+    
+    // 通过appearance统一设置所有UITabBarItem的文字属性
+    // 后面带有UI_APPEARANCE_SELECTOR的方法, 都可以通过appearance对象来统一设置
+    NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
+    attrs[NSFontAttributeName] = [UIFont systemFontOfSize:11];
+    attrs[NSForegroundColorAttributeName] = [UIColor grayColor];
+    
+    NSMutableDictionary *selectedAttrs = [NSMutableDictionary dictionary];
+    selectedAttrs[NSFontAttributeName] = attrs[NSFontAttributeName];
+    selectedAttrs[NSForegroundColorAttributeName] = STRGBColor(107, 231, 214);
+    
+    UITabBarItem *item = [UITabBarItem appearance];
+    [item setTitleTextAttributes:attrs forState:UIControlStateNormal];
+    [item setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
     
     //添加子控制器
     [self setupChildVc:[[STHomePageController alloc] init] title:@"主页" image:@"tab_live" selectedImage:@"tab_live_p"];
@@ -50,7 +64,5 @@
     [self addChildViewController:nav];
     
 }
-
-
 
 @end

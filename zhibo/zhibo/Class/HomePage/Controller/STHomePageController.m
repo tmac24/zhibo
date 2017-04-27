@@ -101,7 +101,7 @@
     
     // 底部的红色指示器
     UIView *indicatorView = [[UIView alloc] init];
-    indicatorView.backgroundColor = [UIColor redColor];
+    indicatorView.backgroundColor = STRGBColor(107, 231, 214);
     indicatorView.height = 2;
     indicatorView.tag = -1;
     indicatorView.y = titlesView.height - indicatorView.height;
@@ -120,7 +120,7 @@
         [button setTitle:titles[i] forState:UIControlStateNormal];
         //        [button layoutIfNeeded]; // 强制布局(强制更新子控件的frame)
         [button setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
-        [button setTitleColor:[UIColor redColor] forState:UIControlStateDisabled];
+        [button setTitleColor:STRGBColor(107, 231, 214) forState:UIControlStateDisabled];
         button.titleLabel.font = [UIFont systemFontOfSize:14];
         [button addTarget:self action:@selector(titleClick:) forControlEvents:UIControlEventTouchUpInside];
         [titlesView addSubview:button];
@@ -206,6 +206,7 @@
     // 点击按钮
     NSInteger index = scrollView.contentOffset.x / scrollView.width;
     [self titleClick:self.titlesView.subviews[index]];
+    
 }
 
 @end

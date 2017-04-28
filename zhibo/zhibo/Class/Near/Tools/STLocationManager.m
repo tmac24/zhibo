@@ -10,12 +10,14 @@
 #import <CoreLocation/CoreLocation.h>
 
 @interface STLocationManager ()<CLLocationManagerDelegate>
+
 @property (nonatomic, strong) CLLocationManager * locManager;
 
 @property (nonatomic, copy) LocationBlock block;
 @end
 
 @implementation STLocationManager
+
 
 + (instancetype)sharedManager {
     
@@ -41,10 +43,19 @@
         if (![CLLocationManager locationServicesEnabled]) {
             NSLog(@"开启定位服务");
         } else {
-            
+            //kCLAuthorizationStatusAuthorizedWhenInUse
+            //kCLAuthorizationStatusNotDetermined
             CLAuthorizationStatus status = [CLLocationManager authorizationStatus];
             if (status == kCLAuthorizationStatusNotDetermined) {
                 [_locManager requestWhenInUseAuthorization];
+            } else if (status == kCLAuthorizationStatusAuthorizedWhenInUse) {
+                //设置精确度
+                _locManager.desiredAccuracy = kCLLocationAccuracyBest;
+                //每十米定位一次
+                CLLocationDistance distance = 10.0;
+                _locManager.distanceFilter = distance;
+                //启动跟踪定位
+                [_locManager startUpdatingLocation];
             }
         }
     }
@@ -69,12 +80,14 @@
     
 }
 
+
+
 - (void)getGps:(LocationBlock)block {
     
     self.block = block;
     [self.locManager startUpdatingLocation];
+    
 }
-
 
 
 

@@ -23,7 +23,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="urg-tj-CIg"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="frY-Uw-aPC"/>
                     </constraints>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="K9F-xN-EXl">
                         <size key="itemSize" width="50" height="50"/>

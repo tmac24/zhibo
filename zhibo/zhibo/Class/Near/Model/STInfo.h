@@ -13,4 +13,7 @@
 /** info */
 @property (nonatomic, strong) STHot *info;
 
+@property (nonatomic, getter=isShow) BOOL show;
+
+
 @end

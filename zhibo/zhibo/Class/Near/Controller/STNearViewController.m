@@ -27,6 +27,16 @@ static NSString * identifier = @"STNearLiveCell";
 @implementation STNearViewController
 
 
+//cell将要显示时调用
+- (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    STNearCollectionViewCell * c = (STNearCollectionViewCell *)cell;
+    
+    [c showAnimation];
+    
+}
+
+
 - (void)initUI {
     
     [self.nearCollectView registerNib:[UINib nibWithNibName:@"STNearCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:identifier];
@@ -98,9 +108,10 @@ static NSString * identifier = @"STNearLiveCell";
 //布局collectionView
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    self.nearCollectView.bounds = [UIScreen mainScreen ].bounds;
+    self.nearCollectView.width = [UIScreen mainScreen ].bounds.size.width;
     
     NSInteger count = self.nearCollectView.width / kItemWidth;
+    
     
     CGFloat etraWidth = (self.nearCollectView.width - kMargin * (count + 1)) / count;
     

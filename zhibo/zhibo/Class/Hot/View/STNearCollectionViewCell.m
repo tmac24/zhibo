@@ -25,6 +25,23 @@
     self.distanceLabel.text = near.info.distance;
 }
 
+- (void)showAnimation {
+
+    if (self.near.isShow) {
+        return;
+    }
+    
+    self.layer.transform = CATransform3DMakeScale(0.1, 0.1, 1);
+    
+    [UIView animateWithDuration:0.5 animations:^{
+        
+        self.layer.transform = CATransform3DMakeScale(1, 1, 1);
+        
+        self.near.show = YES;
+        
+    }];
+}
+
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code

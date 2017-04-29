@@ -13,6 +13,7 @@
                 <outlet property="InKID" destination="wMg-5O-8w0" id="FJA-2Y-ghK"/>
                 <outlet property="heardIcon" destination="m3o-fk-Yh1" id="9Et-0c-RP6"/>
                 <outlet property="online_usersLabel" destination="PUk-wb-98B" id="X2Z-TW-wUh"/>
+                <outlet property="shareButton" destination="Vdv-F9-u6g" id="IVT-xN-QGY"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

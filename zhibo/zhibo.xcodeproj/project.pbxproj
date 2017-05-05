@@ -49,6 +49,14 @@
 		318D15601EB1B83C00E2E4F2 /* STNearCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 318D155E1EB1B83C00E2E4F2 /* STNearCollectionViewCell.xib */; };
 		318D15621EB1BC2F00E2E4F2 /* STNearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 318D15611EB1BC2F00E2E4F2 /* STNearViewController.xib */; };
 		318D15651EB23C2800E2E4F2 /* STlocationTextController.m in Sources */ = {isa = PBXBuildFile; fileRef = 318D15641EB23C2800E2E4F2 /* STlocationTextController.m */; };
+		31D04B6B1EB43197006D1FAE /* STAdvertice.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D04B6A1EB43197006D1FAE /* STAdvertice.m */; };
+		31D04B6E1EB433D5006D1FAE /* STAdvertiseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D04B6D1EB433D5006D1FAE /* STAdvertiseView.m */; };
+		31D04B701EB433E0006D1FAE /* STAdvertiseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31D04B6F1EB433E0006D1FAE /* STAdvertiseView.xib */; };
+		31D04B741EBB1CDB006D1FAE /* STCacheHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D04B731EBB1CDB006D1FAE /* STCacheHelper.m */; };
+		31D04B761EBB36BB006D1FAE /* STShowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31D04B751EBB36BB006D1FAE /* STShowController.xib */; };
+		31D04B7C1EBC1573006D1FAE /* STMeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D04B7A1EBC1573006D1FAE /* STMeCell.m */; };
+		31D04B7D1EBC1573006D1FAE /* STMeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31D04B7B1EBC1573006D1FAE /* STMeCell.xib */; };
+		31D04B7F1EBC1D68006D1FAE /* STMeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31D04B7E1EBC1D68006D1FAE /* STMeController.xib */; };
 		31DE2AC61EAD929A009441F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE2AC51EAD929A009441F1 /* main.m */; };
 		31DE2ACF1EAD929A009441F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31DE2ACD1EAD929A009441F1 /* Main.storyboard */; };
 		31DE2AD11EAD929A009441F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31DE2AD01EAD929A009441F1 /* Assets.xcassets */; };
@@ -125,6 +133,18 @@
 		318D15611EB1BC2F00E2E4F2 /* STNearViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STNearViewController.xib; sourceTree = "<group>"; };
 		318D15631EB23C2800E2E4F2 /* STlocationTextController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STlocationTextController.h; sourceTree = "<group>"; };
 		318D15641EB23C2800E2E4F2 /* STlocationTextController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STlocationTextController.m; sourceTree = "<group>"; };
+		31D04B691EB43197006D1FAE /* STAdvertice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAdvertice.h; sourceTree = "<group>"; };
+		31D04B6A1EB43197006D1FAE /* STAdvertice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAdvertice.m; sourceTree = "<group>"; };
+		31D04B6C1EB433D5006D1FAE /* STAdvertiseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAdvertiseView.h; sourceTree = "<group>"; };
+		31D04B6D1EB433D5006D1FAE /* STAdvertiseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAdvertiseView.m; sourceTree = "<group>"; };
+		31D04B6F1EB433E0006D1FAE /* STAdvertiseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STAdvertiseView.xib; sourceTree = "<group>"; };
+		31D04B721EBB1CDB006D1FAE /* STCacheHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCacheHelper.h; sourceTree = "<group>"; };
+		31D04B731EBB1CDB006D1FAE /* STCacheHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCacheHelper.m; sourceTree = "<group>"; };
+		31D04B751EBB36BB006D1FAE /* STShowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STShowController.xib; sourceTree = "<group>"; };
+		31D04B791EBC1573006D1FAE /* STMeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMeCell.h; sourceTree = "<group>"; };
+		31D04B7A1EBC1573006D1FAE /* STMeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMeCell.m; sourceTree = "<group>"; };
+		31D04B7B1EBC1573006D1FAE /* STMeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STMeCell.xib; sourceTree = "<group>"; };
+		31D04B7E1EBC1D68006D1FAE /* STMeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STMeController.xib; sourceTree = "<group>"; };
 		31DE2AC11EAD929A009441F1 /* zhibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zhibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31DE2AC51EAD929A009441F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		31DE2ACE1EAD929A009441F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -165,9 +185,9 @@
 			isa = PBXGroup;
 			children = (
 				317632171EAE20C400E9D711 /* HomePage */,
+				3176324E1EAE232400E9D711 /* FriendTrend */,
 				317632531EAE233800E9D711 /* Hot */,
 				3176324A1EAE231200E9D711 /* Near */,
-				3176324E1EAE232400E9D711 /* FriendTrend */,
 				317632521EAE232400E9D711 /* Show */,
 				3176321E1EAE20E100E9D711 /* Me */,
 				317632691EAE407D00E9D711 /* NetWork */,
@@ -179,6 +199,7 @@
 		316861581EADF53400CCEC38 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				31D04B711EBB1CC1006D1FAE /* Tools */,
 				317632401EAE220200E9D711 /* Category */,
 				317632251EAE211A00E9D711 /* Controller */,
 				317632291EAE211A00E9D711 /* View */,
@@ -260,6 +281,7 @@
 			children = (
 				317632201EAE20E100E9D711 /* STMeController.h */,
 				317632211EAE20E100E9D711 /* STMeController.m */,
+				31D04B7E1EBC1D68006D1FAE /* STMeController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -274,6 +296,9 @@
 		317632231EAE20E100E9D711 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				31D04B791EBC1573006D1FAE /* STMeCell.h */,
+				31D04B7A1EBC1573006D1FAE /* STMeCell.m */,
+				31D04B7B1EBC1573006D1FAE /* STMeCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -442,6 +467,7 @@
 			children = (
 				317632581EAE236700E9D711 /* STShowController.h */,
 				317632591EAE236700E9D711 /* STShowController.m */,
+				31D04B751EBB36BB006D1FAE /* STShowController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -449,6 +475,8 @@
 		3176325A1EAE236700E9D711 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				31D04B691EB43197006D1FAE /* STAdvertice.h */,
+				31D04B6A1EB43197006D1FAE /* STAdvertice.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -456,6 +484,9 @@
 		3176325B1EAE236700E9D711 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				31D04B6C1EB433D5006D1FAE /* STAdvertiseView.h */,
+				31D04B6D1EB433D5006D1FAE /* STAdvertiseView.m */,
+				31D04B6F1EB433E0006D1FAE /* STAdvertiseView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -479,6 +510,15 @@
 				318D15521EB178D700E2E4F2 /* STLocationManager.m */,
 				318D15631EB23C2800E2E4F2 /* STlocationTextController.h */,
 				318D15641EB23C2800E2E4F2 /* STlocationTextController.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		31D04B711EBB1CC1006D1FAE /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				31D04B721EBB1CDB006D1FAE /* STCacheHelper.h */,
+				31D04B731EBB1CDB006D1FAE /* STCacheHelper.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -595,10 +635,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				318D152A1EAF0E8B00E2E4F2 /* STHotCell.xib in Resources */,
+				31D04B761EBB36BB006D1FAE /* STShowController.xib in Resources */,
 				31DE2AD41EAD929A009441F1 /* LaunchScreen.storyboard in Resources */,
 				318D15621EB1BC2F00E2E4F2 /* STNearViewController.xib in Resources */,
+				31D04B7F1EBC1D68006D1FAE /* STMeController.xib in Resources */,
 				31DE2AD11EAD929A009441F1 /* Assets.xcassets in Resources */,
 				318D15601EB1B83C00E2E4F2 /* STNearCollectionViewCell.xib in Resources */,
+				31D04B701EB433E0006D1FAE /* STAdvertiseView.xib in Resources */,
+				31D04B7D1EBC1573006D1FAE /* STMeCell.xib in Resources */,
 				31DE2ACF1EAD929A009441F1 /* Main.storyboard in Resources */,
 				318D154F1EB0C57F00E2E4F2 /* STLiveChatViewController.xib in Resources */,
 			);
@@ -663,8 +707,11 @@
 				317632241EAE20E100E9D711 /* STMeController.m in Sources */,
 				318D152D1EAF123400E2E4F2 /* STGreator.m in Sources */,
 				3176322C1EAE211A00E9D711 /* STTabBarController.m in Sources */,
+				31D04B7C1EBC1573006D1FAE /* STMeCell.m in Sources */,
 				318D15251EAF0B8C00E2E4F2 /* STHot.m in Sources */,
+				31D04B741EBB1CDB006D1FAE /* STCacheHelper.m in Sources */,
 				318D15651EB23C2800E2E4F2 /* STlocationTextController.m in Sources */,
+				31D04B6E1EB433D5006D1FAE /* STAdvertiseView.m in Sources */,
 				318D15531EB178D700E2E4F2 /* STLocationManager.m in Sources */,
 				318D155B1EB1B1F700E2E4F2 /* STInfo.m in Sources */,
 				316861621EADF53400CCEC38 /* AppDelegate.m in Sources */,
@@ -677,6 +724,7 @@
 				3176325F1EAE264900E9D711 /* STNaVigationController.m in Sources */,
 				317632621EAE2F0F00E9D711 /* STHotViewController.m in Sources */,
 				317632681EAE2FBF00E9D711 /* STFriendTrendViewController.m in Sources */,
+				31D04B6B1EB43197006D1FAE /* STAdvertice.m in Sources */,
 				318D155F1EB1B83C00E2E4F2 /* STNearCollectionViewCell.m in Sources */,
 				318D15291EAF0E8B00E2E4F2 /* STHotCell.m in Sources */,
 				318D154A1EAF827C00E2E4F2 /* STHotPlayController.m in Sources */,

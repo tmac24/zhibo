@@ -28,6 +28,8 @@
 #import "UIView+STExtension.h"
 #import "APIConfig.h"
 #import "HttpTool.h"
+#import "UIImageView+SDWebImage.h"
+#import "SDWebImageManager.h"
 
 
 #endif /* PrefixHeader_pch */

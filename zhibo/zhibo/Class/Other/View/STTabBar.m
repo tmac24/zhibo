@@ -7,6 +7,7 @@
 //
 
 #import "STTabBar.h"
+#import "STShowController.h"
 
 @interface STTabBar ()
 /** 按钮 */
@@ -26,10 +27,19 @@
         [showButton setBackgroundImage:[UIImage imageNamed:@"tab_launch"] forState:UIControlStateNormal];
         showButton.size = showButton.currentBackgroundImage.size;
         [self addSubview:showButton];
-        
+        showButton.tag = 100;
         self.showButton = showButton;
+        [showButton addTarget:self action:@selector(clickItem:) forControlEvents:UIControlEventTouchUpInside];
+        
     }
     return self;
+}
+
+- (void)clickItem:(UIButton *)button {
+    
+    if ([self.delegate respondsToSelector:@selector(tabbar:clickButton:)]) {
+        [self.delegate tabbar:self clickButton:button.tag];
+    }
 }
 
 - (void)layoutSubviews {

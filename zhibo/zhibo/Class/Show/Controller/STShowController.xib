@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="STShowController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="dpm-zy-Fw0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_zbfx" translatesAutoresizingMaskIntoConstraints="NO" id="fGx-ln-BBq">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUn-ho-ooU">
+                    <rect key="frame" x="0.0" y="27" width="86" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="86" id="1dI-jw-nVh"/>
+                        <constraint firstAttribute="height" constant="19" id="bO8-xt-ZTm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="哈尔滨市" image="launch_map_on"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="01H-ej-9wR">
+                    <rect key="frame" x="300" y="20" width="64" height="64"/>
+                    <state key="normal" image="launch_close"/>
+                    <connections>
+                        <action selector="closeLaunch:" destination="-1" eventType="touchUpInside" id="WwD-JB-EQa"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kts-6W-hXR">
+                    <rect key="frame" x="62.5" y="311.5" width="250" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="DDl-gE-UdD"/>
+                        <constraint firstAttribute="width" constant="250" id="hKN-L8-4mu"/>
+                    </constraints>
+                    <state key="normal" title="开始直播" backgroundImage="room_button">
+                        <color key="titleColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="startLive:" destination="-1" eventType="touchUpInside" id="pC2-qc-DXC"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="给直播写个标题吧" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="svW-8g-3XI">
+                    <rect key="frame" x="63" y="264" width="250" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="AqJ-EE-chj"/>
+                        <constraint firstAttribute="height" constant="30" id="gzx-Y7-4e2"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Kts-6W-hXR" firstAttribute="centerY" secondItem="fGx-ln-BBq" secondAttribute="centerY" id="05M-QA-jAH"/>
+                <constraint firstAttribute="bottom" secondItem="fGx-ln-BBq" secondAttribute="bottom" id="3MZ-zs-Gn3"/>
+                <constraint firstItem="fGx-ln-BBq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="8Le-Im-0Cj"/>
+                <constraint firstItem="Kts-6W-hXR" firstAttribute="centerX" secondItem="fGx-ln-BBq" secondAttribute="centerX" id="8gH-QO-Kab"/>
+                <constraint firstItem="01H-ej-9wR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="Q1h-lS-5RY"/>
+                <constraint firstItem="fGx-ln-BBq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ROR-Bp-dm9"/>
+                <constraint firstItem="jUn-ho-ooU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="SuQ-og-sQV"/>
+                <constraint firstItem="jUn-ho-ooU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="27" id="Txy-EU-hXX"/>
+                <constraint firstItem="svW-8g-3XI" firstAttribute="centerX" secondItem="fGx-ln-BBq" secondAttribute="centerX" id="Z3N-Id-EBe"/>
+                <constraint firstAttribute="trailing" secondItem="fGx-ln-BBq" secondAttribute="trailing" id="apa-cr-eV2"/>
+                <constraint firstAttribute="trailing" secondItem="01H-ej-9wR" secondAttribute="trailing" constant="11" id="rSA-3b-253"/>
+                <constraint firstItem="svW-8g-3XI" firstAttribute="centerY" secondItem="fGx-ln-BBq" secondAttribute="centerY" constant="-55" id="x4N-Q6-h66"/>
+            </constraints>
+            <point key="canvasLocation" x="35.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_zbfx" width="16" height="16"/>
+        <image name="launch_close" width="64" height="64"/>
+        <image name="launch_map_on" width="26" height="26"/>
+        <image name="room_button" width="250" height="44"/>
+    </resources>
+</document>

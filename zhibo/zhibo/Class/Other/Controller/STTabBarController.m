@@ -13,7 +13,7 @@
 #import "STTabBar.h"
 #import "STNaVigationController.h"
 
-@interface STTabBarController ()
+@interface STTabBarController ()<STTabBarDelegate>
 
 @end
 
@@ -46,6 +46,25 @@
     
     //更换tabBar
     [self setValue:[[STTabBar alloc] init] forKeyPath:@"tabBar"];
+    
+//    self.delegate = self;
+    
+}
+
+- (void)tabbar:(STTabBar *)tabbar clickButton:(NSInteger)idx {
+
+    if (idx == 100) {
+        STLogFunc; 
+        STShowController *show = [[STShowController alloc] init];
+        
+        [self presentViewController:show animated:YES completion:nil];
+    }
+}
+
+
+- (void)btClick {
+
+    STLogFunc;
 }
 
 /**
@@ -64,5 +83,7 @@
     [self addChildViewController:nav];
     
 }
+
+
 
 @end

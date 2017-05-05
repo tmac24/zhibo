@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@class STTabBar;
+@protocol STTabBarDelegate <NSObject>
+
+@optional
+- (void)tabbar:(STTabBar *)tabbar clickButton:(NSInteger) idx;
+
+@end
+
 @interface STTabBar : UITabBar
+
+@property (nonatomic, weak) id<STTabBarDelegate> delegate;
 
 @end

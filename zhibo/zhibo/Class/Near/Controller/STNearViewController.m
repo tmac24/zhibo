@@ -64,7 +64,7 @@ static NSString * identifier = @"STNearLiveCell";
 
 - (void)loadData {
     
-    STLocationManager * manager = [STLocationManager sharedManager];
+//    STLocationManager * manager = [STLocationManager sharedManager];
     //126.6146033
     //45.7150614
     NSDictionary * params = @{@"uid":@"107020648",

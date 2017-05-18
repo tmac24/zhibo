@@ -30,15 +30,15 @@
                         <rect key="frame" x="20" y="30" width="17" height="22"/>
                         <state key="normal" image="global_search"/>
                     </button>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Ta-Y2-3H9">
-                        <rect key="frame" x="177" y="69" width="60" height="60"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="3Ta-Y2-3H9">
+                        <rect key="frame" x="173" y="69" width="60" height="60"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="60" id="1Lg-eQ-N1C"/>
                             <constraint firstAttribute="height" constant="60" id="1VC-5G-ouX"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="解夏" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qsc-fC-14U">
-                        <rect key="frame" x="177" y="127" width="31" height="23"/>
+                        <rect key="frame" x="173" y="127" width="31" height="23"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="23" id="DDA-qR-Kbn"/>
                             <constraint firstAttribute="width" constant="31" id="rv4-xs-6iS"/>
@@ -48,7 +48,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="global_male" translatesAutoresizingMaskIntoConstraints="NO" id="o9n-ic-BJr">
-                        <rect key="frame" x="213" y="131" width="15" height="15"/>
+                        <rect key="frame" x="209" y="131" width="15" height="15"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="15" id="LgG-ZR-385"/>
                             <constraint firstAttribute="width" constant="15" id="tXs-TH-4fe"/>
@@ -116,8 +116,8 @@
                     <constraint firstItem="ssf-QW-9Qj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="9jo-KP-y2F"/>
                     <constraint firstAttribute="trailing" secondItem="vrt-jt-Bog" secondAttribute="trailing" id="BFl-Vz-HxB"/>
                     <constraint firstItem="vrt-jt-Bog" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="KJg-Nq-ZMf"/>
-                    <constraint firstItem="qsc-fC-14U" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="169" id="Kxq-tn-7rX"/>
-                    <constraint firstItem="3Ta-Y2-3H9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="169" id="PVZ-Xv-KYk"/>
+                    <constraint firstItem="qsc-fC-14U" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="165" id="Kxq-tn-7rX"/>
+                    <constraint firstItem="3Ta-Y2-3H9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="165" id="PVZ-Xv-KYk"/>
                     <constraint firstAttribute="trailing" secondItem="ssf-QW-9Qj" secondAttribute="trailing" constant="20" id="Umu-xl-RBa"/>
                     <constraint firstItem="o9n-ic-BJr" firstAttribute="top" secondItem="3Ta-Y2-3H9" secondAttribute="bottom" constant="2" id="VNi-3v-YPo"/>
                     <constraint firstItem="qsc-fC-14U" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="119" id="bff-W7-B36"/>
@@ -133,6 +133,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="1" width="498" height="498"/>
         <image name="global_male" width="13" height="13"/>
         <image name="global_search" width="17" height="17"/>
         <image name="title_button_more" width="19" height="17"/>

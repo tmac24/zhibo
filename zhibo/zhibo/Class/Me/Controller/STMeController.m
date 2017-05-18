@@ -9,8 +9,8 @@
 #import "STMeController.h"
 #import "STMeCell.h"
 
-@interface STMeController ()
-@property (nonatomic, strong) NSArray * datalist;
+@interface STMeController ()<UITableViewDataSource>
+@property (nonatomic, strong) NSArray * dataList;
 
 @property (nonatomic, strong) STMeCell *infoView;
 @end
@@ -45,31 +45,63 @@
     
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.tableView.tableHeaderView = self.infoView;
+    self.tableView.scrollEnabled = NO;
+    
+    NSArray * group1 = @[@"视屏",@"观看记录",@"账户",@"等级",@"实名认证"];
+    NSArray * group2 = @[@"设置"];
+    NSArray * dataList = @[group1,group2];
+    self.dataList = dataList;
+    
+    
+    /*
+     UITableViewStylePlain,          普通样式
+     UITableViewStyleGrouped         分组样式
+     
+     */
+    CGRect Tableframe = CGRectMake(0, SCREEN_HEIGHT * 0.3, SCREEN_WIDTH, 0);
+    UITableView * tableView = [[UITableView alloc] initWithFrame:Tableframe style:UITableViewStyleGrouped];
+    //设置数据源
+    tableView.dataSource = self;
+    //行高,默认行高是44
+//    tableView.rowHeight = 80;
+    //设置section的高度
+//    tableView.sectionHeaderHeight = 50;
+    //    tableView.backgroundColor = [UIColor greenColor];
+//    tableView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"baby.jpg"]];
+    [self.view addSubview:tableView];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
+
 
 #pragma mark - Table view data source
-
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return self.dataList.count;
 }
+
+//如果不设置section话，section默认是1
+//每组的行数
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return 1;
+    NSArray * tempList = self.dataList[section];
+    
+    return tempList.count;
 }
 
+//生成tableView的单元格UITableViewCell
+//NSIndexPath它是由section，和row组成。
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:nil];
+    UITableViewCell * cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"me"];
     
-    cell.textLabel.text = @"视频";
-    
+    cell.textLabel.text = self.dataList[indexPath.section][indexPath.row];
+//    cell.t
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+
+    cell.backgroundColor = [UIColor clearColor];
     
     return cell;
 }

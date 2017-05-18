@@ -56,7 +56,7 @@
 		31D04B761EBB36BB006D1FAE /* STShowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31D04B751EBB36BB006D1FAE /* STShowController.xib */; };
 		31D04B7C1EBC1573006D1FAE /* STMeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D04B7A1EBC1573006D1FAE /* STMeCell.m */; };
 		31D04B7D1EBC1573006D1FAE /* STMeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31D04B7B1EBC1573006D1FAE /* STMeCell.xib */; };
-		31D04B7F1EBC1D68006D1FAE /* STMeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31D04B7E1EBC1D68006D1FAE /* STMeController.xib */; };
+		31D04B811EBE94F1006D1FAE /* STMeController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31D04B801EBE94F1006D1FAE /* STMeController.storyboard */; };
 		31DE2AC61EAD929A009441F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE2AC51EAD929A009441F1 /* main.m */; };
 		31DE2ACF1EAD929A009441F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31DE2ACD1EAD929A009441F1 /* Main.storyboard */; };
 		31DE2AD11EAD929A009441F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31DE2AD01EAD929A009441F1 /* Assets.xcassets */; };
@@ -144,7 +144,7 @@
 		31D04B791EBC1573006D1FAE /* STMeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMeCell.h; sourceTree = "<group>"; };
 		31D04B7A1EBC1573006D1FAE /* STMeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMeCell.m; sourceTree = "<group>"; };
 		31D04B7B1EBC1573006D1FAE /* STMeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STMeCell.xib; sourceTree = "<group>"; };
-		31D04B7E1EBC1D68006D1FAE /* STMeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STMeController.xib; sourceTree = "<group>"; };
+		31D04B801EBE94F1006D1FAE /* STMeController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = STMeController.storyboard; sourceTree = "<group>"; };
 		31DE2AC11EAD929A009441F1 /* zhibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zhibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31DE2AC51EAD929A009441F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		31DE2ACE1EAD929A009441F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -281,7 +281,7 @@
 			children = (
 				317632201EAE20E100E9D711 /* STMeController.h */,
 				317632211EAE20E100E9D711 /* STMeController.m */,
-				31D04B7E1EBC1D68006D1FAE /* STMeController.xib */,
+				31D04B801EBE94F1006D1FAE /* STMeController.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -638,12 +638,12 @@
 				31D04B761EBB36BB006D1FAE /* STShowController.xib in Resources */,
 				31DE2AD41EAD929A009441F1 /* LaunchScreen.storyboard in Resources */,
 				318D15621EB1BC2F00E2E4F2 /* STNearViewController.xib in Resources */,
-				31D04B7F1EBC1D68006D1FAE /* STMeController.xib in Resources */,
 				31DE2AD11EAD929A009441F1 /* Assets.xcassets in Resources */,
 				318D15601EB1B83C00E2E4F2 /* STNearCollectionViewCell.xib in Resources */,
 				31D04B701EB433E0006D1FAE /* STAdvertiseView.xib in Resources */,
 				31D04B7D1EBC1573006D1FAE /* STMeCell.xib in Resources */,
 				31DE2ACF1EAD929A009441F1 /* Main.storyboard in Resources */,
+				31D04B811EBE94F1006D1FAE /* STMeController.storyboard in Resources */,
 				318D154F1EB0C57F00E2E4F2 /* STLiveChatViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

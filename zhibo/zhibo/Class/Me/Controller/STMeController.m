@@ -98,7 +98,7 @@
     UITableViewCell * cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"me"];
     
     cell.textLabel.text = self.dataList[indexPath.section][indexPath.row];
-//    cell.t
+
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 
     cell.backgroundColor = [UIColor clearColor];

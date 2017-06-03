@@ -860,7 +860,7 @@
 				);
 				GCC_PREFIX_HEADER = zhibo/Class/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = zhibo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "--.zhibo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -880,7 +880,7 @@
 				);
 				GCC_PREFIX_HEADER = zhibo/Class/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = zhibo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "--.zhibo";
 				PRODUCT_NAME = "$(TARGET_NAME)";

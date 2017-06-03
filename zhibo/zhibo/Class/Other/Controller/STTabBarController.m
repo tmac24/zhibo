@@ -54,7 +54,7 @@
 - (void)tabbar:(STTabBar *)tabbar clickButton:(NSInteger)idx {
 
     if (idx == 100) {
-        STLogFunc; 
+//        STLogFunc; 
         STShowController *show = [[STShowController alloc] init];
         
         [self presentViewController:show animated:YES completion:nil];

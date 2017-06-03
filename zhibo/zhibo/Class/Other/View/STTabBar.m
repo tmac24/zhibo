@@ -25,6 +25,7 @@
         //添加直播按钮
         UIButton *showButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [showButton setBackgroundImage:[UIImage imageNamed:@"tab_launch"] forState:UIControlStateNormal];
+//        showButton.contentEdgeInsets = UIEdgeInsetsMake(50, 40, 50, 40);
         showButton.size = showButton.currentBackgroundImage.size;
         [self addSubview:showButton];
         showButton.tag = 100;

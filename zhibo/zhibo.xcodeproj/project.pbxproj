@@ -49,9 +49,10 @@
 		318D15601EB1B83C00E2E4F2 /* STNearCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 318D155E1EB1B83C00E2E4F2 /* STNearCollectionViewCell.xib */; };
 		318D15621EB1BC2F00E2E4F2 /* STNearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 318D15611EB1BC2F00E2E4F2 /* STNearViewController.xib */; };
 		318D15651EB23C2800E2E4F2 /* STlocationTextController.m in Sources */ = {isa = PBXBuildFile; fileRef = 318D15641EB23C2800E2E4F2 /* STlocationTextController.m */; };
-		31D04B6B1EB43197006D1FAE /* STAdvertice.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D04B6A1EB43197006D1FAE /* STAdvertice.m */; };
-		31D04B6E1EB433D5006D1FAE /* STAdvertiseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D04B6D1EB433D5006D1FAE /* STAdvertiseView.m */; };
-		31D04B701EB433E0006D1FAE /* STAdvertiseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31D04B6F1EB433E0006D1FAE /* STAdvertiseView.xib */; };
+		31C621861EE65BF00079EB59 /* LFLivePreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C621851EE65BF00079EB59 /* LFLivePreview.m */; };
+		31C6218B1EE65C580079EB59 /* UIControl+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C621881EE65C580079EB59 /* UIControl+YYAdd.m */; };
+		31C6218C1EE65C580079EB59 /* UIView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C6218A1EE65C580079EB59 /* UIView+YYAdd.m */; };
+		31C6218E1EE65CC10079EB59 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 31C6218D1EE65CC10079EB59 /* libstdc++.tbd */; };
 		31D04B741EBB1CDB006D1FAE /* STCacheHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D04B731EBB1CDB006D1FAE /* STCacheHelper.m */; };
 		31D04B761EBB36BB006D1FAE /* STShowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31D04B751EBB36BB006D1FAE /* STShowController.xib */; };
 		31D04B7C1EBC1573006D1FAE /* STMeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D04B7A1EBC1573006D1FAE /* STMeCell.m */; };
@@ -133,11 +134,13 @@
 		318D15611EB1BC2F00E2E4F2 /* STNearViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STNearViewController.xib; sourceTree = "<group>"; };
 		318D15631EB23C2800E2E4F2 /* STlocationTextController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STlocationTextController.h; sourceTree = "<group>"; };
 		318D15641EB23C2800E2E4F2 /* STlocationTextController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STlocationTextController.m; sourceTree = "<group>"; };
-		31D04B691EB43197006D1FAE /* STAdvertice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAdvertice.h; sourceTree = "<group>"; };
-		31D04B6A1EB43197006D1FAE /* STAdvertice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAdvertice.m; sourceTree = "<group>"; };
-		31D04B6C1EB433D5006D1FAE /* STAdvertiseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAdvertiseView.h; sourceTree = "<group>"; };
-		31D04B6D1EB433D5006D1FAE /* STAdvertiseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAdvertiseView.m; sourceTree = "<group>"; };
-		31D04B6F1EB433E0006D1FAE /* STAdvertiseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STAdvertiseView.xib; sourceTree = "<group>"; };
+		31C621841EE65BF00079EB59 /* LFLivePreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLivePreview.h; sourceTree = "<group>"; };
+		31C621851EE65BF00079EB59 /* LFLivePreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLivePreview.m; sourceTree = "<group>"; };
+		31C621871EE65C580079EB59 /* UIControl+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+YYAdd.h"; sourceTree = "<group>"; };
+		31C621881EE65C580079EB59 /* UIControl+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+YYAdd.m"; sourceTree = "<group>"; };
+		31C621891EE65C580079EB59 /* UIView+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YYAdd.h"; sourceTree = "<group>"; };
+		31C6218A1EE65C580079EB59 /* UIView+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YYAdd.m"; sourceTree = "<group>"; };
+		31C6218D1EE65CC10079EB59 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		31D04B721EBB1CDB006D1FAE /* STCacheHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCacheHelper.h; sourceTree = "<group>"; };
 		31D04B731EBB1CDB006D1FAE /* STCacheHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCacheHelper.m; sourceTree = "<group>"; };
 		31D04B751EBB36BB006D1FAE /* STShowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STShowController.xib; sourceTree = "<group>"; };
@@ -160,6 +163,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31C6218E1EE65CC10079EB59 /* libstdc++.tbd in Frameworks */,
 				318D15551EB1797300E2E4F2 /* CoreLocation.framework in Frameworks */,
 				318D15471EAF7F0C00E2E4F2 /* VideoToolbox.framework in Frameworks */,
 				318D15451EAF7F0000E2E4F2 /* QuartzCore.framework in Frameworks */,
@@ -214,6 +218,7 @@
 		316D44F199FF32E7B5FDA8DC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				31C6218D1EE65CC10079EB59 /* libstdc++.tbd */,
 				318D15541EB1797300E2E4F2 /* CoreLocation.framework */,
 				318D15461EAF7F0C00E2E4F2 /* VideoToolbox.framework */,
 				318D15441EAF7F0000E2E4F2 /* QuartzCore.framework */,
@@ -468,6 +473,12 @@
 				317632581EAE236700E9D711 /* STShowController.h */,
 				317632591EAE236700E9D711 /* STShowController.m */,
 				31D04B751EBB36BB006D1FAE /* STShowController.xib */,
+				31C621841EE65BF00079EB59 /* LFLivePreview.h */,
+				31C621851EE65BF00079EB59 /* LFLivePreview.m */,
+				31C621871EE65C580079EB59 /* UIControl+YYAdd.h */,
+				31C621881EE65C580079EB59 /* UIControl+YYAdd.m */,
+				31C621891EE65C580079EB59 /* UIView+YYAdd.h */,
+				31C6218A1EE65C580079EB59 /* UIView+YYAdd.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -475,8 +486,6 @@
 		3176325A1EAE236700E9D711 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				31D04B691EB43197006D1FAE /* STAdvertice.h */,
-				31D04B6A1EB43197006D1FAE /* STAdvertice.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -484,9 +493,6 @@
 		3176325B1EAE236700E9D711 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				31D04B6C1EB433D5006D1FAE /* STAdvertiseView.h */,
-				31D04B6D1EB433D5006D1FAE /* STAdvertiseView.m */,
-				31D04B6F1EB433E0006D1FAE /* STAdvertiseView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -640,7 +646,6 @@
 				318D15621EB1BC2F00E2E4F2 /* STNearViewController.xib in Resources */,
 				31DE2AD11EAD929A009441F1 /* Assets.xcassets in Resources */,
 				318D15601EB1B83C00E2E4F2 /* STNearCollectionViewCell.xib in Resources */,
-				31D04B701EB433E0006D1FAE /* STAdvertiseView.xib in Resources */,
 				31D04B7D1EBC1573006D1FAE /* STMeCell.xib in Resources */,
 				31DE2ACF1EAD929A009441F1 /* Main.storyboard in Resources */,
 				31D04B811EBE94F1006D1FAE /* STMeController.storyboard in Resources */,
@@ -708,10 +713,11 @@
 				318D152D1EAF123400E2E4F2 /* STGreator.m in Sources */,
 				3176322C1EAE211A00E9D711 /* STTabBarController.m in Sources */,
 				31D04B7C1EBC1573006D1FAE /* STMeCell.m in Sources */,
+				31C6218B1EE65C580079EB59 /* UIControl+YYAdd.m in Sources */,
 				318D15251EAF0B8C00E2E4F2 /* STHot.m in Sources */,
 				31D04B741EBB1CDB006D1FAE /* STCacheHelper.m in Sources */,
+				31C6218C1EE65C580079EB59 /* UIView+YYAdd.m in Sources */,
 				318D15651EB23C2800E2E4F2 /* STlocationTextController.m in Sources */,
-				31D04B6E1EB433D5006D1FAE /* STAdvertiseView.m in Sources */,
 				318D15531EB178D700E2E4F2 /* STLocationManager.m in Sources */,
 				318D155B1EB1B1F700E2E4F2 /* STInfo.m in Sources */,
 				316861621EADF53400CCEC38 /* AppDelegate.m in Sources */,
@@ -722,9 +728,9 @@
 				317632451EAE220200E9D711 /* UIBarButtonItem+STExtension.m in Sources */,
 				31DE2AC61EAD929A009441F1 /* main.m in Sources */,
 				3176325F1EAE264900E9D711 /* STNaVigationController.m in Sources */,
+				31C621861EE65BF00079EB59 /* LFLivePreview.m in Sources */,
 				317632621EAE2F0F00E9D711 /* STHotViewController.m in Sources */,
 				317632681EAE2FBF00E9D711 /* STFriendTrendViewController.m in Sources */,
-				31D04B6B1EB43197006D1FAE /* STAdvertice.m in Sources */,
 				318D155F1EB1B83C00E2E4F2 /* STNearCollectionViewCell.m in Sources */,
 				318D15291EAF0E8B00E2E4F2 /* STHotCell.m in Sources */,
 				318D154A1EAF827C00E2E4F2 /* STHotPlayController.m in Sources */,
@@ -854,6 +860,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 3V39Q7F96X;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -874,6 +881,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 3V39Q7F96X;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",

@@ -7,9 +7,11 @@
 //
 
 #import "STFriendTrendViewController.h"
-
+#import <UIImageView+WebCache.h>
+#import <MediaPlayer/MediaPlayer.h>
 @interface STFriendTrendViewController ()
-
+/** 视屏数据 */
+@property (nonatomic, strong) NSArray *videos;
 @end
 
 @implementation STFriendTrendViewController
@@ -17,11 +19,43 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    //0.请求路径
+    NSURL *url = [NSURL URLWithString:@"http://120.25.226.186:32812/video"];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    //1.创建请求对象
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    
+    //    NSURLSession *session;
+    //    [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+    //解析Json
+    //        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+    //
+    //        //获得视频数组
+    //        self.videos = dict[@"videos"];
+    //        NSLog(@"%@", dict);
+    //
+    //
+    //        //刷新表格
+    //        [self.tableView reloadData];
+    //
+    //    }];
+    
+    //2.发送请求
+    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
+        //解析Json
+        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+        
+        //获得视频数组
+        self.videos = dict[@"videos"];
+//        NSLog(@"%@", dict);
+        
+        //刷新表格
+        [self.tableView reloadData];
+//        self.tableView.rowHeight = 49;
+        CGFloat h = self.tableView.size.height;
+        self.tableView.frame = CGRectMake(0, 35, 375, h);
+//        self.tableView.contentSize.UIEdgeInsets = UIEdgeInsets;
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -30,67 +64,43 @@
 }
 
 #pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 0;
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    return self.videos.count;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    // Configure the cell...
+    static NSString *ID = @"xhr";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    
+    
+    //c. 判断是否获取到可重用的 cell( 最后要空间释放 )
+    if (!cell) {//!cell 相当于 cell == nil
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
+    }
+    
+    
+    NSDictionary *video = self.videos[indexPath.row];
+    
+    cell.textLabel.text = video[@"name"];
+    
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"时长：%@",video[@"length"]];
+    //"http://120.25.226.186:32812
+    NSString *image = [@"http://120.25.226.186:32812"stringByAppendingPathComponent:video[@"image"]];
+    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:image] placeholderImage:[UIImage imageNamed:@"123"]];
     
     return cell;
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSDictionary *video = self.videos[indexPath.row];
+    NSString *urlStr = [@"http://120.25.226.186:32812"stringByAppendingPathComponent:video[@"url"]];
+    
+    MPMoviePlayerViewController *vc = [[MPMoviePlayerViewController alloc] initWithContentURL:[NSURL URLWithString:urlStr]];
+    
+    [self presentViewController:vc animated:YES completion:nil];
 }
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

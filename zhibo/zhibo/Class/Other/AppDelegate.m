@@ -9,7 +9,6 @@
 #import "AppDelegate.h"
 #import "STTabBarController.h"
 #import "STLocationManager.h"
-#import "STAdvertiseView.h"
 
 @interface AppDelegate ()
 

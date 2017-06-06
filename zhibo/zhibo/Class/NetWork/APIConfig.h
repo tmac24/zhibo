@@ -21,6 +21,8 @@
 #define API_HotLive @"api/live/simpleall"
 //@"http://service.inke.com/api/live/simpleall"
 
+#define Live_Dahuan @"rtmp://live.hkstv.hk.lxdns.com:1935/live/dahuan"
+
 
 //GET /api/live/near_flow_old?&gender=1&gps_info=126.610835%2C45.711076&loc_info=CN%2C%E9%BB%91%E9%BE%99%E6%B1%9F%E7%9C%81%2C%E5%93%88%E5%B0%94%E6%BB%A8%E5%B8%82&is_new_user=0&lc=0000000000000053&cc=TG0001&cv=IK4.0.30_Iphone&proto=7&idfa=14390324-A1EC-4746-8743-A6BA53921C4D&idfv=012372C7-1877-464C-A971-7CA41554D5B3&devi=b139da85e05bf5c8957ea6eda7379afbd711d93c&osversion=ios_10.300000&ua=iPhone8_1&imei=&imsi=&uid=107020648&sid=20TLccV62mo9xVzv9XNvEpt7t1g50Ypm2Ed4TJ3hWAphpuJ1i0J&conn=unknow&mtid=&mtxid=&logid=186,166,205,208&latitude=45.711076&longitude=126.610835&multiaddr=1&interest=0&s_sg=3c94a78cf42614d9e2e439b418da3d5a&s_sc=100&s_st=1493265008 HTTP/1.1
 //附近的人

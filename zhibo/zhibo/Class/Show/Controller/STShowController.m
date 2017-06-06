@@ -7,6 +7,8 @@
 //
 
 #import "STShowController.h"
+//#import "LFLiveKit.h"
+#import "LFLivePreview.h"
 
 @interface STShowController ()
 @end
@@ -16,7 +18,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
 
 }
 
@@ -25,18 +26,65 @@
 
 }
 
+
 - (IBAction)startLive:(id)sender {
+    
     
     UIView * backview = [[UIView alloc] initWithFrame:self.view.bounds];
     backview.backgroundColor = [UIColor blackColor];
     [self.view addSubview:backview];
+    
+//    [self.view removeFromSuperview];
+        LFLivePreview * preView = [[LFLivePreview alloc] initWithFrame:self.view.bounds];
+        preView.vc = self;
+        [self.view addSubview:preView];
+
+//    [self.view addSubview:[[LFLivePreview alloc] initWithFrame:self.view.bounds]];
+//    
+//    LFLivePreview *lfview = [[LFLivePreview alloc] init];
+//    lfview.vc = self;
+
+}
+//    LFLivePreview * preView = [[LFLivePreview alloc] initWithFrame:self.view.bounds];
+//    preView.vc = self;
+//    [self.view addSubview:preView];
+//    //开启直播
+//    [preView startLive];
+////    UIView * backview = [[UIView alloc] initWithFrame:self.view.bounds];
+//    backview.backgroundColor = [UIColor blackColor];
+//    [self.view addSubview:backview];
     
 //    LFLivePreview * preView = [[LFLivePreview alloc] initWithFrame:self.view.bounds];
 //    preView.vc = self;
 //    [self.view addSubview:preView];
 //    //开启直播
 //    [preView startLive];
+//    [self.view addSubview:[[LFLivePreview alloc] initWithFrame:self.view.bounds]];
+
     
-}
+
+//- (void)viewDidLoad {
+//    [super viewDidLoad];
+//    // Do any additional setup after loading the view, typically from a nib.
+//    [self.view addSubview:[[LFLivePreview alloc] initWithFrame:self.view.bounds]];
+//}
+
+//- (void)startLive {
+//    
+//    UIView * backview = [[UIView alloc] initWithFrame:self.view.bounds];
+//    backview.backgroundColor = [UIColor blackColor];
+//    [self.view addSubview:backview];
+//    
+//    LFLivePreview * preView = [[LFLivePreview alloc] initWithFrame:self.view.bounds];
+//    preView.vc = self;
+//    [self.view addSubview:preView];
+//    //开启直播
+//    [preView startLive];
+//    
+//}
+
+
+
+
 
 @end

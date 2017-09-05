@@ -45,7 +45,7 @@ static NSString * ID = @"hot";
     
     [HttpTool getWithPath:API_HotLive params:nil success:^(id json) {
         
-//        STLog(@"%@",json[@"lives"]);
+        STLog(@"%@",json[@"lives"]);
         
         //字典数组转模型数组
         NSArray *newTopics = [STHot mj_objectArrayWithKeyValuesArray:json[@"lives"]];
